@@ -1,0 +1,238 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #172b4d;
+  --h-color: #3a4a42;
+  --secondary: #36b37e;
+  --secondary-btn: #36b37f;
+  --weight: bold;
+  --background: #ebf0ee;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #28352f;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+
+header h2 {
+  animation: crane-float 2s alternate 5 ease-in-out both;
+}
+
+nav .nav-menu {
+  visibility: visible;
+  transform: translateY(0%);
+  display: flex;
+  justify-self: center;
+}
+
+nav .nav-menu .nav-link {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  margin: 12px;
+}
+
+nav .nav-menu .nav-link a {
+  display: flex;
+  justify-self: center;
+  padding: 5px 15px;
+  margin: 3px;
+  font-size: 16px;
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-section {
+  background-image: url("./media/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.main-section-title {
+  padding-top: 54px;
+  animation: top-bottom 1s ease-in-out;
+}
+
+.main-section-title h2 {
+  color: var(--secondary);
+}
+
+.main-section p {
+  max-width: 90%;
+  margin: 50px auto 52px;
+  color: var(--primary);
+  font-size: 20px;
+  line-height: 28px;
+  animation: left-right 1s ease-in-out;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-icons li a img {
+  padding: 0 20px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media-icons li a img:hover {
+  transform: scale(1.4);
+}
+
+.works-section {
+  text-align: center;
+  flex-flow: column nowrap;
+}
+
+.works-section-title h2::after {
+  content: " ";
+  display: block;
+  max-width: 48px;
+  height: 4px;
+  margin: 24px auto 62px;
+  background-color: var(--secondary);
+}
+
+.frames ul {
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.frames .languages li {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 12px;
+  margin: 3px 5px;
+  color: var(--secondary);
+  background: #fff;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  justify-content: center;
+  width: 80%;
+}
+
+.contact-form button {
+  height: 48px;
+  width: 159px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--secondary-btn);
+  letter-spacing: 0.03em;
+  padding: 12px;
+  margin-bottom: 10px;
+  transition: all 0.4s ease 0.2s;
+}
+
+.about-section .about {
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: calc(68px + 15px) 24px 15px;
+}
+
+.about h2 {
+  margin: 0 auto;
+  padding-bottom: 24px;
+  animation: left-right 1s ease-in-out;
+}
+
+.about p {
+  width: 90%;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  color: #42526e;
+  padding-bottom: 24px;
+  animation: right-left 1s ease-in-out;
+}
+
+.about button:active {
+  background-color: #36b37e;
+}
+
+.frame-wrapper .frames {
+  width: 50%;
+  height: 352px;
+  margin: 0 auto;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  justify-self: center;
+  flex-direction: column;
+  background: var(--background);
+  transition: all 0.4s ease;
+}
+
+.frame-wrapper .frames:hover {
+  transform: scale(1.05);
+}
+
+.frame-wrapper .tools-img {
+  width: 100%;
+}
+
+.frames h3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #344563;
+  margin-bottom: 24px;
+}

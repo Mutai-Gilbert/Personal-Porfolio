@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal portfolio</title>
+
+  <link rel="Stylesheet" href="./styles.css" />
+</head>
+
+
+<body>
+  <header class="main-header">
+    <a href="#" class="logo">Welcome</a>
+    <nav class="nav">
+      <ul class="nav-menu">
+        <li class="nav-link"><a href="#Portfolio">Portoflio</a></li>
+        <li class="nav-link active"><a href="#About">About</a></li>
+        <li class="nav-link"><a href="#form">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="main-section">
+      <div class="main-section-title">
+        <h1>Hello, I'm Gilbert Mutai</h1>
+        <h2>
+          I'm a software developer
+        </h2>
+      </div>
+      <p>
+        I am a software developer with robust
+        problem-solving skills and proven experience in creating and
+        designing software in a test- driven environment.</p>
+
+      <!-- Social Media -->
+      <div class="icons-container">
+        <ul class="social-media-icons">
+          <li>
+            <a href="#">
+              <img src="media/twitter.svg" alt="twitter" />
+
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="media/Linkedin-icon.svg" alt="linkedin" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="media/medium.svg" alt="medium" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="media/github.svg" alt="github" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="media/angelist.svg" alt="angellist" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    </section>
+    <article class="">
+    </article>
+    <section id="About" class="about-section">
+      <div class="about">
+        <h2>About me</h2>
+        <p>
+          I'm dedicated and always willing to go to any extra lengths to pursue my dreams. My passion is in
+          problem-solving, to always offer solutions more so in Africa and the World.
+        </p>
+      </div>
+      <div class="projects">
+        <ul class="frame-wrapper">
+          <li class="frames">
+            <img src="/media/languages.jpg" class="tools-img" alt="languages" />
+            <h3>Languages</h3>
+            <ul class="languages">
+              <li>JavaScript</li>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>C</li>
+              <li>Python</li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <form action="https://formspree.io/f/mnqwneyz" method="post" id="form">
+        <h2>
+          Always looking forward to new challenges.
+        </h2>
+        <ul class="form">
+          <li>
+            <label for="name">
+              <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" required />
+            </label>
+          </li>
+          <li>
+            <label for="mail">
+              <input type="email" id="mail" name="email-adress" placeholder="Email address" required />
+            </label>
+          </li>
+          <li>
+            <textarea id="msg" name="user_message" placeholder="Enter text here" rows="5" maxlength="500"
+              required></textarea>
+          </li>
+          <li class="btn-submit">
+            <button type="submit" class="footer-btn">
+              Get in touch
+            </button>
+          </li>
+        </ul>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
