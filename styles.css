@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
   --primary: #172b4d;
   --h-color: #3a4a42;
@@ -33,7 +29,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Inter", sans-serif;
-  scroll-behavior: smooth;
   overflow-x: hidden;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
