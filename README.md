@@ -9,7 +9,7 @@
 
 ### Desktop version Screenshot:
 
-![screenshot](./image/screenshot2.png/)
+![screenshot](/media/personal-portfolio.png)
 
 The objectives of this project is to:
 
@@ -29,7 +29,7 @@ The objectives of this project is to:
 
 ## Live Demo
 
-[Portfolio Link](https://cynthiainga.github.io/Personal-Portfolio/)
+[Portfolio Link](https://github.com/Mutai-Gilbert/Responsive-Personal-Porfolio)
 
 ## Getting Started
 
@@ -43,21 +43,17 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-To clone the repository run the command `git clone https://github.com/cynthiainga/Personal_Portfolio.git`
+To clone the repository run the command `git clone https://github.com/Mutai-Gilbert/Responsive-Personal-Porfolio.git`
 
 ## Authors
 
-👤 **Cynthia Inga Candy**
+👤 **Gilbert Mutai**
 
-- GitHub: [@cynthiainga](https://github.com/cynthiainga)
-- Twitter: [@CynthiaInga_C](https://twitter.com/CynthiaInga_C)
-- LinkedIn: [Cynthia Inga](https://www.linkedin.com/in/cynthia-inga/)
+- GitHub: [@githubhandle](https://github.com/Mutai-Gilbert)
+- Twitter: [@twitterhandle](https://twitter.com/@nerdmutai)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mutai-gilbert-2a5a42137/)
 
 ## 🤝 Contributing
-
-**Elerqsousy Riz**
-
-GitHub: (https://github.com/Elerqsousy)
 
 Feel free to check the [issues page](../../issues/).
 
