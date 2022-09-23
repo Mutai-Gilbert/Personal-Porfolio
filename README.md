@@ -9,7 +9,7 @@
 
 ### Desktop version Screenshot:
 
-![screenshot](/media/personal-portfolio.png)
+![screenshot](./media/personal-portfolio.png)
 
 The objectives of this project is to:
 
