@@ -30,7 +30,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  margin-top: 30px;
   object-fit: cover;
   background-color: #fff;
 }
@@ -70,11 +69,10 @@ header {
 }
 
 .main-section {
-  background-position: center top;
   width: 550px;
   height: 400px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding-left: 10px;
   display: grid;
   justify-content: start;
 }
