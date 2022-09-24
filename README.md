@@ -4,12 +4,6 @@
 
 > This project help to know how to build the a portfolio website and also implement best practices (e.g. linters).
 
-## Description
-
-
-### Desktop version Screenshot:
-
-![screenshot](./media/personal-portfolio.png)
 
 The objectives of this project is to:
 
