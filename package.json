@@ -1,0 +1,24 @@
+{
+  "name": "responsive-personal-porfolio",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mutai-Gilbert/Responsive-Personal-Porfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mutai-Gilbert/Responsive-Personal-Porfolio/issues"
+  },
+  "homepage": "https://github.com/Mutai-Gilbert/Responsive-Personal-Porfolio#readme",
+  "devDependencies": {
+    "hint": "^2.0.0",
+    "husky": "^4.3.8"
+  }
+}
