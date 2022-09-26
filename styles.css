@@ -190,7 +190,7 @@ header {
 .projects-done ul {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-right: 40%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
