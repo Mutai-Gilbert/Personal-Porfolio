@@ -64,7 +64,8 @@ header {
 }
 
 .main-section {
-  height: 400px;
+  width: 375px;
+  height: 450px;
   margin: 0 auto;
   padding: 0 24px;
   display: grid;
