@@ -68,8 +68,8 @@ header {
 }
 
 .main-section {
-  width: 550px;
-  height: 400px;
+  width: 375px;
+  height: 450px;
   margin: 0 auto;
   padding-left: 10px;
   display: grid;
