@@ -31,7 +31,6 @@ body {
   background-size: cover;
   height: auto;
   object-fit: cover;
-  background-color: #fff;
 }
 
 header {
@@ -81,7 +80,7 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 40px;
   color: #172b4d;
   display: flex;
@@ -100,12 +99,10 @@ header {
 }
 
 .main-section p {
-  margin: 50px auto 52px;
-  color: var(--primary);
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
   animation: left-right 1s ease-in-out;
   height: auto;
+  flex-direction: column;
 }
 
 .social-media-icons {
@@ -232,39 +229,33 @@ h3 {
 .on {
   box-sizing: border-box;
   display: flex;
-  padding: 10px;
-  gap: 12px;
-  height: 50px;
-  background: #fff;
-  border: 1px solid #6070ff;
-  border-radius: 16px;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  width: 26%;
-  color: #396df2;
+  padding: 12px;
+  gap: 10px;
+  position: relative;
+  width: 124px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
-.on-get {
+.resume {
   box-sizing: border-box;
   display: flex;
-  padding: 10px;
-  gap: 12px;
-  width: 50%;
-  height: 50px;
-  background: #fff;
-  border: 0.2px solid #6070ff;
-  border-radius: 16px;
-  margin-bottom: 25px;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 170px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
-.on-get p {
+.resume p {
   color: #396df2;
 }
 
@@ -292,14 +283,17 @@ h5 {
 
 h6 {
   position: relative;
-  padding-left: 30px;
+  height: 24px;
+  left: 76px;
+  right: 12px;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 20px;
   display: flex;
   align-items: center;
+  margin-top: 20px;
   color: #253858;
 }
 
