@@ -86,6 +86,8 @@ header {
   display: flex;
   justify-content: start;
   margin-top: 20px;
+  width: 400px;
+  height: auto;
 }
 
 .h4-connect {
@@ -101,6 +103,7 @@ header {
 .main-section p {
   font-size: 15px;
   animation: left-right 1s ease-in-out;
+  width: 400px;
   height: auto;
   flex-direction: column;
 }
@@ -248,7 +251,7 @@ h3 {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  width: 170px;
+  width: 162px;
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -257,6 +260,8 @@ h3 {
 
 .resume p {
   color: #396df2;
+  width: 138px;
+  height: 24px;
 }
 
 h5 {
