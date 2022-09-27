@@ -17,6 +17,7 @@ a {
 
 body {
   background-image: url(./media/header-background-mobile.png);
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   font-family: "Inter", sans-serif;
@@ -33,6 +34,17 @@ body {
   object-fit: cover;
 }
 
+p {
+  width: 295px;
+  height: 76px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
 header {
   width: 100%;
   background-color: #fff;
@@ -43,7 +55,7 @@ header {
 .main-header a {
   width: 100px;
   height: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -77,17 +89,26 @@ header {
 }
 
 .main-section-title h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 40px;
   color: #172b4d;
   display: flex;
-  justify-content: start;
-  margin-top: 20px;
-  width: 400px;
-  height: auto;
+  align-items: center;
+  width: 327px;
+  height: 101px;
+}
+
+h2 {
+  width: 327px;
+  height: 101px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40;
+  line-height: 52px;
+  color: #172b4d;
 }
 
 .h4-connect {
@@ -97,12 +118,10 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 7px;
 }
 
 .main-section p {
   font-size: 15px;
-  animation: left-right 1s ease-in-out;
   width: 400px;
   height: auto;
   flex-direction: column;
@@ -189,47 +208,64 @@ header {
 
 .projects-done ul {
   display: flex;
-  list-style: none;
   justify-content: space-around;
-  margin-right: 40%;
-  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 15px;
-}
-
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 13px;
+  line-height: 16px;
   color: #344563;
 }
 
 .skills {
   display: flex;
   justify-content: start;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 600;
   padding-right: 10px;
   gap: 5px;
 }
 
-.skill {
-  position: relative;
+.skill-html {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: 53px;
+  height: 24px;
   background: #ebebff;
-  border-radius: 6px;
-  padding: 10px;
-  list-style-type: none;
+  border-radius: 8px;
+}
+
+.skill-css {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: 45px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.skill-js {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: 89px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
 }
 
 .skill-content {
   position: relative;
-  color: black;
+  color: #6070ff;
 }
 
-.on {
+.button {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -239,9 +275,58 @@ h3 {
   position: relative;
   width: 124px;
   height: 48px;
-  border: 1px solid #6070ff;
+  border: 1px solid #7f8cff;
+  background: #fff;
   border-radius: 8px;
   margin-top: 10px;
+}
+
+button:enabled {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  width: 93px;
+  height: 48px;
+  left: 100px;
+  top: calc(50% - 48px / 2 + 57.5px);
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+}
+
+button:hover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  width: 93px;
+  height: 48px;
+  left: 252px;
+  top: calc(50% - 48px / 2 + 57.5px);
+  background: #6070ff;
+  border-radius: 8px;
+}
+
+button:disabled {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  width: 93px;
+  height: 48px;
+  left: 564px;
+  top: calc(50% - 48px / 2 + 57.5px);
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
 }
 
 .resume {
@@ -265,7 +350,7 @@ h3 {
 }
 
 h5 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -291,7 +376,7 @@ h6 {
   height: 24px;
   left: 76px;
   right: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
