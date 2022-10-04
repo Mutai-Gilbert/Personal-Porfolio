@@ -421,7 +421,7 @@ h6 {
   position: absolute;
   width: 98%;
   height: 120px;
-  margin-top: 10px;
+  margin-top: 40px;
   top: calc(50% - 150px / 2);
 }
 
@@ -457,7 +457,7 @@ h6 {
 .button-contact {
   font-style: normal;
   margin-left: -60px;
-  margin-top: 110px;
+  margin-top: 140px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
