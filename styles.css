@@ -1,4 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+	2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+	3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/*
+	Typographic tweaks!
+	4. Add accessible line-height
+	5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+	6. Imp
+/*
+	6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+	7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+	8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+	9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
 
 * {
   box-sizing: border-box;
@@ -19,28 +98,24 @@ a {
 }
 
 body {
-  background-image: url(./media/header-background-mobile.png);
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
 .container {
-  background-image: url("./media/header-shapes\ mobile@2x.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: auto;
   object-fit: cover;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #344563;
 }
@@ -48,7 +123,6 @@ p {
 header {
   width: 100%;
   background-color: #fff;
-  display: flex;
   padding: 20px 20px;
 }
 
@@ -65,13 +139,16 @@ header {
   color: #6070ff;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 .nav img {
-  position: absolute;
-  width: 50px;
-  height: 30px;
-  right: 3px;
-  top: 6px;
-  padding-right: 15px;
+  height: 24px;
+
 }
 
 .white {
@@ -87,10 +164,16 @@ header {
   justify-content: start;
 }
 
+.background {
+  background-image: url("./media/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
+
+}
+
 .main-section-title h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 35px;
   color: #172b4d;
   display: flex;
   align-items: center;
@@ -119,7 +202,7 @@ h2 {
 
 .main-section p {
   font-size: 15px;
-  width: 400px;
+  width: 98%;
   height: auto;
   flex-direction: column;
 }
@@ -141,7 +224,12 @@ h2 {
 }
 
 .Frameworks img {
-  height: 25px;
+  height: 15px;
+}
+ 
+.social-media-icons {
+  display: flex;
+  align-items: center;
 }
 
 .social-media-icons li a img {
@@ -177,6 +265,7 @@ h2 {
 }
 
 .card {
+  /*width: 100%; */
   background-color: white;
   padding: 2%;
   border-radius: 15px;
@@ -264,10 +353,8 @@ h2 {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 12px;
   gap: 10px;
-  position: relative;
   width: 130px;
   height: 48px;
   border: 1px solid #7f8cff;
@@ -282,9 +369,7 @@ button:enabled {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  position: absolute;
   left: 100px;
-  top: calc(50% - 48px / 2 + 57.5px);
   background: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
@@ -295,10 +380,8 @@ button:hover {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  position: absolute;
   width: 140px;
   height: 48px;
-  top: calc(50% - 48px / 2 + 57.5px);
   background: #2230d2;
   border-radius: 8px;
 }
@@ -383,7 +466,7 @@ h6 {
   flex-direction: column;
   position: relative;
   width: 100%;
-  height: 779px;
+  height: 730px;
   background: #6070ff;
   margin-top: 40px;
   border-radius: 75px 0 0 0;
@@ -420,13 +503,12 @@ h6 {
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 24px;
   list-style-type: none;
+  width: 100%;
   height: 120px;
-  margin-top: 100px;
-  top: calc(50% - 150px / 2);
+  margin-top: 30px;
 }
 
 #name,
@@ -455,15 +537,12 @@ h6 {
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-style: normal;
-  margin-top: 170px;
-  margin-left: -20px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #6070ff;
 }
+
+
