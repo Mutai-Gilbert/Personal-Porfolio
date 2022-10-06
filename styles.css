@@ -104,13 +104,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.container {
-  height: auto;
-  object-fit: cover;
-  width: 100%;
-  overflow-x: hidden;
-}
-
 p {
   font-style: normal;
   font-weight: 400;
@@ -152,10 +145,10 @@ header {
 }
 
 .main-section {
-  width: 98%;
-  height: auto;
-  display: grid;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 20px;
+  height: 50vh;
 }
 
 .background {
@@ -168,10 +161,7 @@ header {
   font-weight: 700;
   font-size: 35px;
   color: #172b4d;
-  display: flex;
   align-items: center;
-  width: 327px;
-  height: 101px;
 }
 
 h2 {
@@ -179,18 +169,14 @@ h2 {
   height: 50px;
   font-style: normal;
   font-weight: 700;
-  font-size: 40;
+  font-size: 24px;
   line-height: 52px;
   color: #172b4d;
 }
 
 .lets-connect {
   color: #7f8cff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  margin-top: 20px;
 }
 
 .main-title p {
@@ -219,11 +205,13 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   list-style-type: none;
+  margin-top: 25px;
 }
 
 .social-media-icons li a img {
   margin-right: 20px;
-  transition: all 0.3s ease-in-out;
+
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .social-media-icons li a img:hover {
@@ -233,15 +221,6 @@ h2 {
 .works-section {
   text-align: center;
   flex-flow: column nowrap;
-}
-
-.works-title h2::after {
-  content: " ";
-  display: block;
-  max-width: 48px;
-  height: 4px;
-  margin: 24px auto 62px;
-  background-color: var(--secondary);
 }
 
 .cards {
@@ -263,10 +242,9 @@ h2 {
 .one h2 {
   display: flex;
   justify-content: flex-start;
-  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 44px;
 }
 
@@ -287,6 +265,7 @@ h2 {
   font-weight: 600;
   padding-right: 10px;
   gap: 5px;
+  margin-top: 10px;
 }
 
 .skill-html {
@@ -327,18 +306,25 @@ h2 {
   color: #6070ff;
 }
 
+.section-about {
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+  height: 300px;
+}
+
 .button {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  padding: 12px;
-  gap: 10px;
-  width: 130px;
-  height: 48px;
+  padding: 1%;
+  width: 100px;
   border: 1px solid #7f8cff;
   background: #fff;
   border-radius: 8px;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.button-resume {
+  width: 120px;
+  margin-top: 20px;
 }
 
 button:enabled {
@@ -528,28 +514,27 @@ h6 {
     background: #e5e5e5;
   }
 
+  .main-section {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .main-title {
+    height: 100vh;
+  }
+
   .main-container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     background: #fff;
     padding: 20px 20px;
     background-image: url("./media/header-shapes\ mobile@2x.svg");
     background-repeat: no-repeat;
-    border-radius: 20px;
-  }
-
-  .main-section {
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    margin: 15vh auto;
-    padding-left: 10px;
+    border-radius: 0 0 60px 60px;
   }
 
   .main-title h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-style: normal;
     font-weight: 700;
     width: 70%;
@@ -619,8 +604,6 @@ h6 {
     background-color: #fff;
     border-radius: 20px;
     width: 100%;
-    height: auto;
-    padding-right: 0;
     padding: 20px;
     margin: 15px 15px 10px;
   }
@@ -660,7 +643,6 @@ h6 {
     display: flex;
     width: 50%;
     height: auto;
-    padding-right: 0;
     padding: 20px;
     margin: 15px 15px 10px;
     float: left;
@@ -677,12 +659,19 @@ h6 {
     flex-direction: column;
     width: 50%;
     height: auto;
-    padding-right: 0;
     padding: 20px;
     margin: 15px 15px 10px;
   }
 
   .languages h2 {
     font-size: 24px;
+  }
+
+  .button {
+    width: 110px;
+  }
+
+  .button-resume {
+    width: 125px;
   }
 }
