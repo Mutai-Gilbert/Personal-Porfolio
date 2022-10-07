@@ -102,6 +102,7 @@ body {
   overflow-x: hidden;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: #e5e5e5;
 }
 
 p {
@@ -117,18 +118,7 @@ header {
   padding: 20px 20px;
 }
 
-.main-header a {
-  width: 100px;
-  height: 40px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #6070ff;
-}
+/* Start of navbar */
 
 .nav {
   display: flex;
@@ -144,16 +134,37 @@ header {
   display: none;
 }
 
-.main-section {
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 20px;
-  height: 50vh;
+/* End of Navbar */
+
+/* Start of main section */
+
+.main-header a {
+  width: 100px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
 }
 
-.background {
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 15% 15% 5% 15%;
+}
+
+.main-container {
   background-image: url("./media/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
 }
 
 .main-title h1 {
@@ -162,11 +173,18 @@ header {
   font-size: 35px;
   color: #172b4d;
   align-items: center;
+  padding-bottom: 2.5%;
+}
+
+.main-title p {
+  font-size: 15px;
+  width: 98%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
-  width: 327px;
-  height: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -176,25 +194,13 @@ h2 {
 
 .lets-connect {
   color: #7f8cff;
-  margin-top: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.main-title p {
-  font-size: 15px;
-  width: 98%;
-  height: auto;
-  flex-direction: column;
-}
-
-.projects-done img {
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  object-fit: cover;
-  width: 90%;
-  height: auto;
-  background-color: white;
-}
+/* End of main section */
 
 .Frameworks img {
   height: 15px;
@@ -205,18 +211,19 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   list-style-type: none;
-  margin-top: 25px;
 }
 
 .social-media-icons li a img {
-  margin-right: 20px;
+  margin-right: 7px;
 
   /* transition: all 0.3s ease-in-out; */
 }
 
+/*
 .social-media-icons li a img:hover {
   transform: scale(1.4);
 }
+*/
 
 .works-section {
   text-align: center;
@@ -239,19 +246,10 @@ h2 {
   border-radius: 15px;
 }
 
-.one h2 {
-  display: flex;
-  justify-content: flex-start;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 44px;
-}
-
 .cards-section ul {
   display: flex;
   justify-content: space-around;
-  list-style-type: none;
+  list-style-image: url(./media/Counter.png);
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
@@ -264,7 +262,7 @@ h2 {
   font-size: 12px;
   font-weight: 600;
   padding-right: 10px;
-  gap: 5px;
+  gap: 12px;
   margin-top: 10px;
 }
 
@@ -290,12 +288,23 @@ h2 {
   border-radius: 8px;
 }
 
+.skill-ruby {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  width: 110px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
 .skill-js {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 4px 12px;
-  width: 89px;
+  width: 85px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
@@ -306,79 +315,16 @@ h2 {
   color: #6070ff;
 }
 
+/* about-section */
+.about-section {
+  background-color: #fff;
+}
+
 .section-about {
   flex-direction: column;
   justify-content: space-around;
   margin: 20px;
   height: 300px;
-}
-
-.button {
-  padding: 1%;
-  width: 100px;
-  border: 1px solid #7f8cff;
-  background: #fff;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-.button-resume {
-  width: 120px;
-  margin-top: 20px;
-}
-
-button:enabled {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  left: 100px;
-  background: #fff;
-  border: 1px solid #7f8cff;
-  border-radius: 8px;
-}
-
-button:hover {
-  display: flex;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 140px;
-  height: 48px;
-  background: #2230d2;
-  border-radius: 8px;
-}
-
-.resume {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 162px;
-  height: 48px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
-.resume p {
-  color: #396df2;
-  width: 138px;
-  height: 24px;
-}
-
-h5 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  display: flex;
-  justify-content: flex-start;
-  color: #000;
-  margin-bottom: 10px;
 }
 
 .frame0 {
@@ -389,6 +335,19 @@ h5 {
   margin-top: 10px;
   display: flex;
   justify-items: center;
+}
+
+.languages-ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.languages-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20%;
 }
 
 h6 {
@@ -406,25 +365,16 @@ h6 {
   color: #253858;
 }
 
-.languages-ul {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.languages-about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-}
-
 .Frameworks {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
 
+/* end of about-section */
+
+
+/* Contact-me section */
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -436,6 +386,7 @@ h6 {
   border-radius: 75px 0 0 0;
   background-image: url(./media/contact\ form\ shapes-mobile.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-form {
@@ -471,7 +422,7 @@ h6 {
   gap: 24px;
   list-style-type: none;
   width: 100%;
-  height: 120px;
+  height: auto;
   margin-top: 30px;
 }
 
@@ -500,14 +451,38 @@ h6 {
   border-radius: 8px;
 }
 
+/* End of contact-me section */
+
+/* buttons */
+
 .btn {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
+  background-color: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  width: 140px;
+  height: 48px;
+  margin-top: 20px;
 }
+
+.text {
+  color: #396df2;
+}
+
+.btn-contact {
+  margin: 0;
+}
+
+button:hover {
+  background: #6070ff;
+}
+
+button:disabled {
+  background-color: #fff;
+}
+
+/* end of buttons */
+
+/* Media query */
 
 @media screen and (min-width: 768px) {
   body {
@@ -526,24 +501,20 @@ h6 {
 
   .main-container {
     width: 100%;
-    min-height: 50vh;
+    height: auto;
     background: #fff;
     padding: 20px 20px;
     background-image: url("./media/header-shapes\ mobile@2x.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 0 0 60px 60px;
   }
 
   .main-title h1 {
-    font-style: normal;
-    font-weight: 700;
-    width: 70%;
-    height: auto;
+    font-weight: 900;
     line-height: 60px;
     font-size: 48px;
     letter-spacing: 0.37px;
-    color: #091e42;
-    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -567,13 +538,17 @@ h6 {
 
   .nav ul a {
     justify-content: space-between;
+    color: #344563;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    color: #172b4d;
+    line-height: 52px;
+    color: #091e42;
     margin-bottom: 20px;
   }
 
@@ -581,8 +556,8 @@ h6 {
     display: flex;
     justify-self: flex-end;
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: bolder;
+    font-size: 20px;
     line-height: 24px;
     color: #7f8cff;
     margin-top: 30px;
@@ -590,7 +565,6 @@ h6 {
   }
 
   .cards {
-    display: grid;
     justify-content: center;
     padding: 16px;
     gap: 12px;
@@ -602,10 +576,8 @@ h6 {
 
   .cards-section {
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 0 20px;
     width: 100%;
-    padding: 20px;
-    margin: 15px 15px 10px;
   }
 
   .cards-contents {
@@ -636,6 +608,7 @@ h6 {
   .about-section {
     background-color: #fff;
     width: 100%;
+    border-radius: 0 100px 0 0;
   }
 
   .about {
@@ -665,13 +638,5 @@ h6 {
 
   .languages h2 {
     font-size: 24px;
-  }
-
-  .button {
-    width: 130px;
-  }
-
-  .button-resume {
-    width: 140px;
   }
 }

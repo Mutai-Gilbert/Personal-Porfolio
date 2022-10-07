@@ -2,7 +2,7 @@
 
 # Personal Portfolio
 
-> This project help to know how to build the a portfolio website and also implement best practices (e.g. linters).
+> This is the mobile version of the personal portfolio website created with HTML5 and CSS. Html and Css linters have been added to help catch errors and make the coding very easy and bug free
 
 
 The objectives of this project is to:
@@ -17,8 +17,9 @@ The objectives of this project is to:
 
 ## Built With
 
-- HTML
-- CSS
+- HTML5 and CSS3
+- Font awesome
+- HTML5 and CSS3 linters
 - CSS Flexbox
 
 ## Live Demo
@@ -49,7 +50,7 @@ To clone the repository run the command `git clone https://github.com/Mutai-Gilb
 
 ## 🤝 Contributing
 
-Feel free to check the [issues page](../../issues/).
+Contributions, issues and feature requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ## Show your support
 
