@@ -226,7 +226,7 @@ h2 {
 
 .social-media-icons li a img {
   margin-right: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; /*The contribution of the animations and transitions on the mobile-version*/
 }
 
 .social-media-icons li a img:hover {
