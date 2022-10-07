@@ -347,7 +347,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20%;
 }
 
 h6 {
@@ -460,12 +459,11 @@ h6 {
   background-color: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
-  width: 140px;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 48px;
-  margin-top: 20px;
-}
-
-.text {
+  margin-top: 30px;
+  padding: 10px;
   color: #396df2;
 }
 
@@ -618,9 +616,8 @@ button:disabled {
     border-radius: 20px;
     display: flex;
     width: 50%;
-    height: auto;
     padding: 20px;
-    margin: 15px 15px 10px;
+    margin: 35px 15px 10px;
     float: left;
   }
 
@@ -636,7 +633,6 @@ button:disabled {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: auto;
     padding: 20px;
     margin: 15px 15px 10px;
   }
