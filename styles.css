@@ -242,8 +242,9 @@ h2 {
 .cards-section {
   /* width: 100%; */
   background-color: white;
-  padding: 2%;
+  padding: 30px;
   border-radius: 15px;
+  margin: 20px;
 }
 
 .cards-section ul {
@@ -324,7 +325,7 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   margin: 20px;
-  height: 300px;
+  padding: 20px;
 }
 
 .frame0 {
@@ -333,10 +334,19 @@ h2 {
   background: #f7f7f9;
   border-radius: 8px;
   margin-top: 10px;
+}
+.languages li {
+  padding: 10px;
   display: flex;
-  justify-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
+.frame0 img {
+  width: 48px;
+  height: 48px;
+  
+}
 .languages-ul {
   display: flex;
   align-items: center;
@@ -350,7 +360,6 @@ h2 {
 }
 
 h6 {
-  position: relative;
   height: 24px;
   left: 76px;
   right: 12px;
@@ -379,7 +388,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 730px;
+  height: 779px;
   background: #6070ff;
   margin-top: 40px;
   border-radius: 75px 0 0 0;
@@ -421,13 +430,15 @@ h6 {
   align-items: center;
   gap: 24px;
   list-style-type: none;
-  width: 100%;
-  height: auto;
+
+  /* width: 100%;
+  height: auto; */
   margin-top: 30px;
 }
 
 #name,
 #email {
+  width: 327px;
   height: 48px;
   padding: 5px 7px;
   font-style: normal;
@@ -440,7 +451,8 @@ h6 {
 }
 
 #textarea {
-  height: 100px;
+  width: 327px;
+  height: 170px;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -504,7 +516,7 @@ button:disabled {
     height: auto;
     background: #fff;
     padding: 20px 20px;
-    background-image: url("./media/header-shapes\ mobile@2x.svg");
+    background-image: url("./media/contact\ form\ background\ shapes@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 0 60px 60px;
@@ -576,7 +588,7 @@ button:disabled {
   .cards-section {
     background-color: #fff;
     border-radius: 20px;
-    margin: 40px 80px;
+    padding: 40px;
   }
 
   .cards-contents {
@@ -584,6 +596,7 @@ button:disabled {
     flex-direction: column;
     justify-items: center;
     border-radius: 20px;
+    margin: 24px 24px;
   }
 
   .one {
@@ -596,6 +609,8 @@ button:disabled {
     width: 50%;
     float: left;
     padding: 20px;
+
+    /* margin: 20px; */
   }
 
   .two ul {
@@ -616,7 +631,7 @@ button:disabled {
     border-radius: 20px;
     display: flex;
     width: 50%;
-    padding: 20px;
+    padding: 140px;
     margin: 35px 15px 10px;
     float: left;
   }
@@ -632,12 +647,44 @@ button:disabled {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding: 20px;
+    padding: 140px;
     margin: 15px 15px 10px;
   }
 
   .languages h2 {
     font-size: 24px;
+  }
+
+  .languages ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .frame0 img {
+    width: 48px;
+    height: 48px;
+    margin-top: 12px;
+  }
+
+  .languages li {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 142px;
+    height: 120px;
+  }
+
+
+  #name,
+  #email {
+    width: 497px;
+    height: 48px;
+  }
+
+  #textarea {
+    width: 497px;
+    height: 170px;
   }
 }
