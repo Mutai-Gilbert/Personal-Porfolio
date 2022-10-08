@@ -213,6 +213,11 @@ h2 {
   list-style-type: none;
 }
 
+.frame0 img {
+  width: 48px;
+  height: 48px;
+}
+
 .social-media-icons li a img {
   margin-right: 7px;
 
@@ -335,6 +340,7 @@ h2 {
   border-radius: 8px;
   margin-top: 10px;
 }
+
 .languages li {
   padding: 10px;
   display: flex;
@@ -342,11 +348,6 @@ h2 {
   flex-direction: row;
 }
 
-.frame0 img {
-  width: 48px;
-  height: 48px;
-  
-}
 .languages-ul {
   display: flex;
   align-items: center;
@@ -675,7 +676,6 @@ button:disabled {
     width: 142px;
     height: 120px;
   }
-
 
   #name,
   #email {
