@@ -115,6 +115,13 @@ h4 {
   list-style-type: none;
 }
 
+.projects-done img {
+  border-radius: 8px;
+  display: flex;
+  justify-items: center;
+  object-fit: cover;
+}
+
 .social-media-icons li a img {
   margin-right: 20px;
   transition: all 0.3s ease-in-out;
@@ -141,18 +148,12 @@ h4 {
 .card {
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   display: grid;
   padding: 1%;
   margin-top: 20px;
-}
-.projects-done img {
-  border-radius: 8px;
-  display: flex;
-  justify-items: center;
-  object-fit: cover;
 }
 
 .projects-done h2 {
@@ -169,7 +170,7 @@ h4 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 236px;
   height: 32px;
