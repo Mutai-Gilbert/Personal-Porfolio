@@ -116,11 +116,12 @@ p {
   /* position: absolute; */
   width: 100%;
   height: 718px;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
+  left: 0;
+  top: 0;
+  background: #fff;
   background-image: url("./media/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
+
   /* overflow-x: hidden; */
 }
 
@@ -139,10 +140,10 @@ header {
 .Toolbar {
   height: 48px;
   position: absolute;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   top: 44px;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .Toolbar a {
@@ -165,11 +166,10 @@ header {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
-
   position: absolute;
   width: 375px;
   height: 604px;
-  left: calc(50% - 375px/2);
+  left: calc(50% - 375px / 2);
   top: 92px;
 }
 
@@ -204,6 +204,7 @@ header {
 
 .social-media-icons {
   padding: 0 24px 12px 24px;
+
   /* width: 170.17px; */
   height: 20px;
   display: flex;
@@ -217,12 +218,12 @@ header {
   margin-right: 15px;
 }
 
-/*End of welcome section */
+/* End of welcome section */
 
-/*Start of Works section*/
+/* Start of Works section */
 
 .Works {
-  background: #E5E5E5;
+  background: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,9 +231,10 @@ header {
   gap: 88px;
 
   /* position: absolute; */
+
   /* width: 375px; */
   height: 2788px;
-  left: 0px;
+  left: 0;
   top: 718px;
 }
 
@@ -245,16 +247,16 @@ header {
   gap: 12px;
   width: 327px;
   height: 552px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
 .Snapshoot-Portfolio img {
   padding: 16px 16px 12px 16px;
+
   /* width: 295px; */
   height: 220px;
-
   background: url(blog_drbl_4x.png);
   border-radius: 8px;
 }
@@ -263,37 +265,34 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
-
   width: 295px;
   height: 288px;
-
 }
 
 .Primary-Text {
-
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
-  padding: 0px;
-  gap: 12px;
 
+  /* align-items: flex-start; */
+  padding: 0;
+  gap: 12px;
   width: 295px;
   height: 80px;
 }
 
 .Primary-Text h2 {
-  padding: 0px 16px;
+  padding: 0 16px;
   width: 295px;
   height: 36px;
-
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
+
   /* font-size: 32px; */
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .Primary-Text ul {
@@ -308,16 +307,16 @@ header {
   height: 32px;
 }
 
-
 .Left-Block p {
-  padding: 0px 0px 12px 16px;
+  padding: 0 0 12px 16px;
   width: 295px;
   height: 76px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+
   /* or 160% */
 
   /* Neutrals/N600 */
@@ -325,7 +324,7 @@ header {
 }
 
 .Tags {
-  padding: 16px 0px 12px 16px;
+  padding: 16px 0 12px 16px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -374,7 +373,6 @@ header {
   height: 72px;
 }
 
-
 .Normal-button {
   box-sizing: border-box;
   display: flex;
@@ -384,26 +382,24 @@ header {
   gap: 10px;
   width: 130px;
   height: 48px;
-  left: 0px;
-  top: calc(50% - 48px/2);
-  border: 1px solid #6070FF;
+  left: 0;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
   border-radius: 8px;
-  color: #396DF2;
+  color: #396df2;
 }
 
 button:enabled {
-  background: #FFFFFF;
-  border: 1px solid #7F8CFF;
+  background: #fff;
+  border: 1px solid #7f8cff;
   border-radius: 8px;
 }
 
 button:hover {
-  background: #6070FF;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
 }
-
-
 
 .About-myself {
   display: flex;
@@ -414,7 +410,7 @@ button:hover {
   position: absolute;
   width: 375px;
   height: 1125.15px;
-  left: calc(50% - 375px/2);
+  left: calc(50% - 375px / 2);
   top: 3506px;
 }
 
@@ -424,51 +420,47 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-
   width: 327px;
+
   /* height: 409px; */
 }
 
 .TOP h2 {
-  padding: 12px 0px 12px 24px;
+  padding: 12px 0 12px 24px;
   width: 327px;
   height: 101px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172B4D;
-
+  color: #172b4d;
 }
 
 .TOP p {
-  padding: 12px 0px 12px 24px;
-
+  padding: 12px 0 12px 24px;
 }
 
 .Social-Media {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   width: 200px;
   height: 80px;
-
 }
 
 .Social-Media ul {
-  padding: 12px 0px 12px 24px;
+  padding: 12px 0 12px 24px;
   list-style-type: none;
   width: 200px;
   height: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 .Social-Media img {
@@ -476,14 +468,14 @@ button:hover {
 }
 
 .TOP-connect {
-  padding: 12px 0px 12px 24px;
+  padding: 12px 0 12px 24px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .resume {
@@ -492,7 +484,7 @@ button:hover {
 }
 
 .Skill-List {
-  padding: 0px 24px 113.85px 24px;
+  padding: 0 24px 113.85px 24px;
   display: flex;
   flex-direction: column;
   width: 327px;
@@ -503,30 +495,27 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   width: 327px;
-
 }
 
 .Frame-12 h3 {
   height: 24px;
   left: 12px;
   right: 78px;
-  top: calc(50% - 24px/2);
-  font-family: 'Poppins';
+  top: calc(50% - 24px / 2);
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: flex;
   align-items: center;
-
-  color: #000000;
+  color: #000;
 }
 
 .Frame-8,
 .Frame-9 {
-  padding: 48px 0px 36px ;
+  padding: 48px 0 36px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -541,7 +530,6 @@ button:hover {
   display: flex;
   justify-items: center;
 }
-
 
 h6 {
   position: relative;
@@ -558,7 +546,7 @@ h6 {
   color: #253858;
 }
 
-/* 
+/*
 .contact-me {
   display: flex;
   flex-direction: column;
