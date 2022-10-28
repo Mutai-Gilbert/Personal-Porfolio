@@ -393,7 +393,7 @@ button:enabled {
   background: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
-  width: 130px;
+  width: 140px;
   height: 48px;
 }
 
@@ -478,11 +478,6 @@ button:hover {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-}
-
-.resume {
-  width: 162px;
-  height: 48px;
 }
 
 .Skill-List {
