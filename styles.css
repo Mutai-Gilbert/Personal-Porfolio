@@ -373,7 +373,7 @@ header {
   height: 72px;
 }
 
-.Normal-button {
+.button {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -393,6 +393,8 @@ button:enabled {
   background: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
+  width: 130px;
+  height: 48px;
 }
 
 button:hover {
