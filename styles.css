@@ -97,12 +97,9 @@ body {
 }
 
 .Template-1 {
-  background-color: #60c095;
-  position: relative;
+  position: absolute;
   width: 375px;
   height: 5410px;
-
-  /* Neutrals/N10 */
 
   /* background: #F7F7F9; */
 }
@@ -124,8 +121,6 @@ p {
   background: #fff;
   background-image: url("./media/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
-
-  /* overflow-x: hidden; */
 }
 
 header {
@@ -142,8 +137,7 @@ header {
 
 .Toolbar {
   height: 48px;
-
-  /* position: absolute; */
+  position: absolute;
   left: 0;
   right: 0;
   top: 44px;
@@ -414,9 +408,10 @@ button:hover {
   align-items: center;
   padding: 0 24px;
   gap: 24px;
-  position: absolute;
+
+  /* position: absolute; */
   width: 375px;
-  height: 1175.15px;
+  height: 1150.15px;
 
   /* left: calc(50% - 375px / 2); */
   top: 3506px;
@@ -518,7 +513,7 @@ button:hover {
 
 .Frame-8,
 .Frame-9 {
-  padding: 48px 0 36px;
+  padding: 24px 0 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -550,7 +545,7 @@ h6 {
 }
 
 .Contact-me {
-  position: absolute;
+  /* position: absolute; */
   width: 375px;
   height: 779px;
   left: 0;
