@@ -560,6 +560,8 @@ h6 {
 
 .Contact-me p {
   /* position: absolute; */
+  background-image: url(media/contact\ form.png);
+ background-repeat: no-repeat;
   padding: 0 24px 87px 24px;
   height: 102px;
   left: 24px;
@@ -633,6 +635,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #6070FF;
 }
 
 .get-in-touch {
