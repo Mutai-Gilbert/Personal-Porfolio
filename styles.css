@@ -532,7 +532,7 @@ h6 {
 .Contact-me {
   /* position: absolute; */
   width: 375px;
-  height: 779px;
+  height: 778px;
   left: 0;
   top: 5410px;
   background: #6070ff;
@@ -626,4 +626,15 @@ h6 {
   padding: 12px;
   border: 1px solid #60c095;
   border-radius: 8px;
+}
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: row;
 }
