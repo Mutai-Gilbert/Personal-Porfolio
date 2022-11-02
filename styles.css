@@ -665,6 +665,12 @@ h6 {
     width: 100%;
   }
 
+  .header-background-mobile {
+    background-image: url(./media/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
   .Toolbar img {
     display: none;
   }
@@ -725,8 +731,18 @@ h6 {
     width: 447px;
   }
 
+  .Contact-me {
+    background-image: url(./media/contact-form-shapes@2x.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
   .Contact-me p {
-    /* width: 569px; */
+    /* width: 50%; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30%;
+    align-items: center;
     height: 102px;
   }
 
