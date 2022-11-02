@@ -233,6 +233,7 @@ header {
   align-items: center;
   padding: 16px;
   gap: 12px;
+
   /* width: 327px; */
   height: 552px;
   background: #fff;
@@ -391,7 +392,6 @@ button:hover {
   border-radius: 8px;
 }
 
-
 .About-myself {
   display: flex;
   flex-direction: column;
@@ -400,6 +400,7 @@ button:hover {
   gap: 24px;
 
   /* position: absolute; */
+
   /* width: 375px; */
   height: 1150.15px;
 
@@ -413,6 +414,7 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+
   /* width: 327px; */
 
   /* height: 409px; */
@@ -420,6 +422,7 @@ button:hover {
 
 .TOP h2 {
   /* padding: 12px 0 12px 24px; */
+
   /* width: 327px; */
   height: 101px;
   font-family: 'Poppins', sans-serif;
@@ -472,13 +475,14 @@ button:hover {
 }
 
 .resume {
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .Skill-List {
   padding: 0 24px 145px 24px;
   display: flex;
   flex-direction: column;
+
   /* width: 327px; */
   height: 464.15px;
 }
@@ -521,7 +525,6 @@ button:hover {
   margin-top: 10px;
   display: flex;
   justify-content: flex-start;
-
 }
 
 h6 {
@@ -539,7 +542,9 @@ h6 {
 
 .Contact-me {
   /* position: absolute; */
+
   /* width: 375px; */
+
   /* display: flex; */
   align-items: center;
   text-align: center;
@@ -553,8 +558,10 @@ h6 {
 .Contact-me h2 {
   /* position: absolute; */
   padding: 103px 0 12px 0;
+
   /* width: 375px; */
   height: 56px;
+
   /* left: -213px; */
   top: 4734px;
   font-family: 'Poppins', sans-serif;
@@ -588,6 +595,7 @@ h6 {
   /* display: flex; */
   flex-direction: column;
   align-items: center;
+
   /* gap: 24px; */
 }
 
@@ -642,6 +650,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
+
   /* color: #6070ff; */
 }
 
@@ -710,7 +719,6 @@ h6 {
     justify-content: center;
     width: 122px;
     height: 120px;
-    
   }
 
   .TOP p {
@@ -723,9 +731,8 @@ h6 {
   }
 
   .forms {
-    padding-top: 0px;
+    padding-top: 0;
     flex-direction: column;
     align-items: center;
   }
-
 }
