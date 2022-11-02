@@ -154,6 +154,10 @@ header {
   color: #6070ff;
 }
 
+.Toolbar ul {
+  display: none;
+}
+
 .main-section {
   display: flex;
   flex-direction: column;
@@ -229,7 +233,7 @@ header {
   align-items: center;
   padding: 16px;
   gap: 12px;
-  width: 327px;
+  /* width: 327px; */
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -387,11 +391,12 @@ button:hover {
   border-radius: 8px;
 }
 
+
 .About-myself {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 24px;
+  padding: 114px 24px;
   gap: 24px;
 
   /* position: absolute; */
@@ -403,19 +408,19 @@ button:hover {
 }
 
 .TOP {
-  padding: 114px 24px 48px 24px;
+  /* padding: 114px 24px 48px 24px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  width: 327px;
+  /* width: 327px; */
 
   /* height: 409px; */
 }
 
 .TOP h2 {
-  padding: 12px 0 12px 24px;
-  width: 327px;
+  /* padding: 12px 0 12px 24px; */
+  /* width: 327px; */
   height: 101px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -428,7 +433,7 @@ button:hover {
 }
 
 .TOP p {
-  padding: 12px 0 12px 24px;
+  /* padding: 12px 0 12px 24px; */
 }
 
 .Social-Media {
@@ -442,7 +447,7 @@ button:hover {
 }
 
 .Social-Media ul {
-  padding: 12px 0 12px 24px;
+  /* padding: 12px 0 12px 24px; */
   list-style-type: none;
   width: 200px;
   height: 40px;
@@ -456,7 +461,7 @@ button:hover {
 }
 
 .TOP-connect {
-  padding: 12px 0 12px 24px;
+  /* padding: 12px 0 12px 24px; */
   height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -466,11 +471,15 @@ button:hover {
   color: #7f8cff;
 }
 
+.resume {
+  padding-left: 0px;
+}
+
 .Skill-List {
   padding: 0 24px 145px 24px;
   display: flex;
   flex-direction: column;
-  width: 327px;
+  /* width: 327px; */
   height: 464.15px;
 }
 
@@ -511,14 +520,13 @@ button:hover {
   border-radius: 8px;
   margin-top: 10px;
   display: flex;
-  justify-items: center;
+  justify-content: flex-start;
+
 }
 
 h6 {
-  position: relative;
+  /* position: relative; */
   height: 24px;
-  left: 76px;
-  right: 12px;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -532,6 +540,9 @@ h6 {
 .Contact-me {
   /* position: absolute; */
   /* width: 375px; */
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
   height: 778px;
   left: 0;
   top: 5410px;
@@ -544,17 +555,13 @@ h6 {
   padding: 103px 0 12px 0;
   /* width: 375px; */
   height: 56px;
-  left: -213px;
+  /* left: -213px; */
   top: 4734px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #fff;
 }
 
@@ -576,12 +583,12 @@ h6 {
 }
 
 .forms {
-  padding: 60px 0 0 24px;
+  padding-top: 60px;
 
   /* display: flex; */
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .forms ul {
@@ -631,21 +638,94 @@ h6 {
 }
 
 .form button {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #6070ff;
+  /* color: #6070ff; */
 }
 
 .get-in-touch {
   display: flex;
   flex-direction: row;
 }
+
 @media only screen and (min-width: 768px) {
   .Template-1 {
     position: absolute;
-    width: 100%; 
+    width: 100%;
   }
-  
+
+  .Toolbar img {
+    display: none;
+  }
+
+  .Toolbar ul {
+    display: flex;
+    list-style-type: none;
+    color: #344563;
+  }
+
+  .Card-Works {
+    flex-direction: row;
+    height: 496px;
+  }
+
+  .Snapshoot-Portfolio img {
+    width: 544px;
+    height: 448px;
+  }
+
+  .Left-Block {
+    width: 544px;
+    height: 445px;
+  }
+
+  .About-myself {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .TOP {
+    width: 447px;
+    height: 392px;
+  }
+
+  .Skill-List {
+    width: 684px;
+    height: 360px;
+  }
+
+  .Skill-List ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .frame0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 120px;
+    
+  }
+
+  .TOP p {
+    width: 447px;
+  }
+
+  .Contact-me p {
+    /* width: 569px; */
+    height: 102px;
+  }
+
+  .forms {
+    padding-top: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
