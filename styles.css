@@ -318,7 +318,6 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 203px;
   height: 24px;
 }
 
@@ -328,6 +327,17 @@ header {
   padding: 4px 12px;
   width: 53px;
   height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.Tags-ruby {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+
+  /* height: 24px; */
   background: #ebebff;
   border-radius: 8px;
 }
