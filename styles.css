@@ -395,7 +395,7 @@ button:hover {
   gap: 24px;
 
   /* position: absolute; */
-  width: 375px;
+  /* width: 375px; */
   height: 1150.15px;
 
   /* left: calc(50% - 375px / 2); */
@@ -531,7 +531,7 @@ h6 {
 
 .Contact-me {
   /* position: absolute; */
-  width: 375px;
+  /* width: 375px; */
   height: 778px;
   left: 0;
   top: 5410px;
@@ -542,7 +542,7 @@ h6 {
 .Contact-me h2 {
   /* position: absolute; */
   padding: 103px 0 12px 0;
-  width: 375px;
+  /* width: 375px; */
   height: 56px;
   left: -213px;
   top: 4734px;
@@ -552,7 +552,7 @@ h6 {
   font-size: 40px;
   line-height: 52px;
 
-  /* display: flex; */
+  display: flex;
   align-items: center;
   text-align: center;
   color: #fff;
@@ -641,4 +641,11 @@ h6 {
 .get-in-touch {
   display: flex;
   flex-direction: row;
+}
+@media only screen and (min-width: 768px) {
+  .Template-1 {
+    position: absolute;
+    width: 100%; 
+  }
+  
 }
