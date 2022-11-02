@@ -110,7 +110,7 @@ p {
 }
 
 .header-background-mobile {
-  width: 375px;
+  /* width: 375px; */
   height: 718px;
   left: 0;
   top: 0;
@@ -271,6 +271,13 @@ header {
   height: 80px;
 }
 
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c1c7d0;
+}
+
 .Primary-Text h2 {
   padding: 0 16px;
   width: 295px;
@@ -278,19 +285,17 @@ header {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-
-  /* font-size: 32px; */
   line-height: 44px;
   color: #172b4d;
 }
 
 .Primary-Text ul {
-  padding: 16px 16px;
+  padding-left: 16px;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 7px;
 
   /* width: 236px; */
   height: 32px;
@@ -305,10 +310,6 @@ header {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-
-  /* or 160% */
-
-  /* Neutrals/N600 */
   color: #344563;
 }
 
@@ -403,8 +404,6 @@ button:hover {
 
   /* width: 375px; */
   height: 1150.15px;
-
-  /* left: calc(50% - 375px / 2); */
   top: 3506px;
 }
 
@@ -433,10 +432,6 @@ button:hover {
   display: flex;
   align-items: center;
   color: #172b4d;
-}
-
-.TOP p {
-  /* padding: 12px 0 12px 24px; */
 }
 
 .Social-Media {
@@ -524,7 +519,7 @@ button:hover {
   border-radius: 8px;
   margin-top: 10px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 h6 {
@@ -546,12 +541,13 @@ h6 {
   /* width: 375px; */
 
   /* display: flex; */
+  background: #6070ff url(./media/contact-form-shapes@2x.png) no-repeat;
+  background-size: cover;
   align-items: center;
   text-align: center;
   height: 778px;
   left: 0;
   top: 5410px;
-  background: #6070ff;
   border-radius: 80px 0 0 0;
 }
 
@@ -561,8 +557,6 @@ h6 {
 
   /* width: 375px; */
   height: 56px;
-
-  /* left: -213px; */
   top: 4734px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -574,8 +568,6 @@ h6 {
 
 .Contact-me p {
   /* position: absolute; */
-  background-image: url(media/contact\ form.png);
-  background-repeat: no-repeat;
   padding: 0 24px 87px 24px;
   height: 102px;
   left: 24px;
@@ -595,8 +587,6 @@ h6 {
   /* display: flex; */
   flex-direction: column;
   align-items: center;
-
-  /* gap: 24px; */
 }
 
 .forms ul {
@@ -668,7 +658,7 @@ h6 {
   .header-background-mobile {
     background-image: url(./media/Header\ bg@2x.png);
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
   }
 
   .Toolbar img {
@@ -734,11 +724,10 @@ h6 {
   .Contact-me {
     background-image: url(./media/contact-form-shapes@2x.png);
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
   }
 
   .Contact-me p {
-    /* width: 50%; */
     display: flex;
     flex-wrap: wrap;
     padding: 0 30%;
