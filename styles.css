@@ -80,8 +80,6 @@ p {
   left: 0;
   top: 0;
   background: #fff;
-  background-image: url("./media/header-shapes\ mobile@2x.svg");
-  background-repeat: no-repeat;
 }
 
 header {
@@ -131,6 +129,8 @@ header {
   position: absolute;
   height: 604px;
   top: 92px;
+  background-image: url("./media/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
 }
 
 .main-section-title h1 {
@@ -236,7 +236,6 @@ header {
 }
 
 .Primary-Text h2 {
-  /* padding: 0 16px; */
   width: 295px;
   height: 36px;
   font-family: 'Poppins', sans-serif;
@@ -247,7 +246,6 @@ header {
 }
 
 .Primary-Text ul {
-  /* padding-left: 16px; */
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -257,7 +255,6 @@ header {
 }
 
 .Left-Block p {
-  /* padding: 0 0 12px 16px; */
   width: 295px;
   height: 76px;
   font-family: 'Poppins', sans-serif;
@@ -269,7 +266,6 @@ header {
 }
 
 .Tags {
-  /* padding: 16px 0 12px 16px; */
   display: flex;
   align-items: center;
   gap: 8px;
@@ -316,7 +312,6 @@ header {
 }
 
 .Action {
-  /* padding: 12px 16px 16px 16px; */
   width: 295px;
   height: 72px;
 }
@@ -349,6 +344,7 @@ button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+  color: #fff;
 }
 
 .About-myself {
@@ -580,19 +576,7 @@ h6 {
   }
 
   .header-background-mobile {
-    background-image: url(./media/Header\ bg@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 916px;
-  }
-
-  .main-section {
-    padding: 289px 260px 0 260px;
-  }
-
-  .main-section-title h1 {
-    font-size: 48px;
-    line-height: 60px;
   }
 
   .Toolbar img {
@@ -605,9 +589,26 @@ h6 {
     color: #344563;
   }
 
+  .main-section {
+    padding: 289px 260px 0 260px;
+    background-image: url(./media/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-section-title h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
   .Card-Works {
     flex-direction: row;
     height: 496px;
+  }
+
+  .Card-Works:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .Snapshoot-Portfolio img {
@@ -618,6 +619,7 @@ h6 {
   .Left-Block {
     width: 544px;
     height: 445px;
+    padding: 24px;
   }
 
   .Primary-Text h2 {
@@ -626,17 +628,24 @@ h6 {
     line-height: 52px;
   }
 
+  .Primary-Text ul {
+    padding-top: 12px;
+  }
+
+  .Tags {
+    padding-top: 12px;
+  }
+
   .Tags-ruby {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
   }
 
-  h6 {
-    margin-left: 0;
+  .Action {
+    padding-top: 30px;
   }
 
   .About-myself {
@@ -646,8 +655,17 @@ h6 {
   }
 
   .TOP {
-    width: 447px;
+    padding-left: 142px;
     height: 392px;
+  }
+
+  .TOP h2 {
+    font-weight: 700;
+    font-size: 42px;
+  }
+
+  .TOP p {
+    width: 447px;
   }
 
   .Skill-List {
@@ -670,8 +688,8 @@ h6 {
     height: 120px;
   }
 
-  .TOP p {
-    width: 447px;
+  h6 {
+    margin-left: 0;
   }
 
   .Contact-me {
