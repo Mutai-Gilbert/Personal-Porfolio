@@ -1,42 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/*
-	2. Remove default margin
-*/
-
-/*
-	3. Allow percentage-based heights in the application
-  */
 html,
 body {
   height: 100%;
   font-family: 'Inter', sans-serif;
 }
 
-/*
-	Typographic tweaks!
-	4. Add accessible line-height
-	5. Improve text rendering
-  body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-  */
-
-/*
-	6. Imp
-/*
-	6. Improve media defaults
-  */
 img,
 picture,
 video,
@@ -46,9 +21,6 @@ svg {
   max-width: 100%;
 }
 
-/*
-	7. Remove built-in form typography styles
-  */
 input,
 button,
 textarea,
@@ -56,9 +28,6 @@ select {
   font: inherit;
 }
 
-/*
-	8. Avoid text overflows
-  */
 p,
 h1,
 h2,
@@ -69,9 +38,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/*
-	9. Create a root stacking context
-  */
 #root,
 #__next {
   isolation: isolate;
@@ -110,18 +76,13 @@ p {
 }
 
 .header-background-mobile {
-  width: 375px;
   height: 718px;
   left: 0;
   top: 0;
   background: #fff;
-  background-image: url("./media/header-shapes\ mobile@2x.svg");
-  background-repeat: no-repeat;
 }
 
 header {
-  /* width: 100%; */
-  background-color: #fff;
   padding: 20px 20px;
 }
 
@@ -133,36 +94,43 @@ header {
 
 .Toolbar {
   height: 48px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 44px;
-  bottom: 0;
 }
 
 .Toolbar a {
   display: flex;
-  align-items: center;
-  text-align: center;
   width: 96px;
+  height: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+}
+
+.nav .logo {
   height: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
   color: #6070ff;
+}
+
+.Toolbar ul {
+  display: none;
 }
 
 .main-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 114px 24px;
   gap: 12px;
   position: absolute;
   height: 604px;
   top: 92px;
+  background-image: url("./media/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
 }
 
 .main-section-title h1 {
@@ -229,7 +197,6 @@ header {
   align-items: center;
   padding: 16px;
   gap: 12px;
-  width: 327px;
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -237,9 +204,6 @@ header {
 }
 
 .Snapshoot-Portfolio img {
-  /* padding: 16px 16px 12px 16px; */
-
-  /* width: 295px; */
   height: 220px;
   background: url(blog_drbl_4x.png);
   border-radius: 8px;
@@ -258,41 +222,51 @@ header {
 .Primary-Text {
   display: flex;
   flex-direction: column;
-
-  /* align-items: flex-start; */
   padding: 0;
   gap: 12px;
-  width: 295px;
   height: 80px;
 }
 
-.Primary-Text h2 {
-  padding: 0 16px;
-  width: 295px;
-  height: 36px;
+.Primary-Text ul {
+  padding-top: 12px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 700;
-
-  /* font-size: 32px; */
-  line-height: 44px;
-  color: #172b4d;
-}
-
-.Primary-Text ul {
-  padding: 16px 16px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #6b778c;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
-
-  /* width: 236px; */
+  gap: 7px;
   height: 32px;
 }
 
+.canopy {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c1c7d0;
+}
+
+.Primary-Text h2 {
+  height: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+}
+
 .Left-Block p {
-  padding: 0 0 12px 16px;
   width: 295px;
   height: 76px;
   font-family: 'Poppins', sans-serif;
@@ -300,19 +274,13 @@ header {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-
-  /* or 160% */
-
-  /* Neutrals/N600 */
   color: #344563;
 }
 
 .Tags {
-  padding: 16px 0 12px 16px;
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 203px;
   height: 24px;
 }
 
@@ -324,6 +292,10 @@ header {
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
+}
+
+.Tags-ruby {
+  display: none;
 }
 
 .Tags-css {
@@ -352,7 +324,6 @@ header {
 }
 
 .Action {
-  padding: 12px 16px 16px 16px;
   width: 295px;
   height: 72px;
 }
@@ -370,7 +341,6 @@ header {
   top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   border-radius: 8px;
-  color: #396df2;
 }
 
 button:enabled {
@@ -379,43 +349,31 @@ button:enabled {
   border-radius: 8px;
   width: 140px;
   height: 48px;
+  color: #396df2;
 }
 
 button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+  color: #fff;
 }
 
 .About-myself {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 24px;
-  gap: 24px;
-
-  /* position: absolute; */
-  width: 375px;
-  height: 1150.15px;
-
-  /* left: calc(50% - 375px / 2); */
-  top: 3506px;
+  padding: 114px 24px;
 }
 
 .TOP {
-  padding: 114px 24px 48px 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  width: 327px;
-
-  /* height: 409px; */
 }
 
 .TOP h2 {
-  padding: 12px 0 12px 24px;
-  width: 327px;
   height: 101px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -425,10 +383,6 @@ button:hover {
   display: flex;
   align-items: center;
   color: #172b4d;
-}
-
-.TOP p {
-  padding: 12px 0 12px 24px;
 }
 
 .Social-Media {
@@ -442,7 +396,6 @@ button:hover {
 }
 
 .Social-Media ul {
-  padding: 12px 0 12px 24px;
   list-style-type: none;
   width: 200px;
   height: 40px;
@@ -456,7 +409,6 @@ button:hover {
 }
 
 .TOP-connect {
-  padding: 12px 0 12px 24px;
   height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -466,11 +418,14 @@ button:hover {
   color: #7f8cff;
 }
 
+.resume {
+  padding-left: 0;
+}
+
 .Skill-List {
   padding: 0 24px 145px 24px;
   display: flex;
   flex-direction: column;
-  width: 327px;
   height: 464.15px;
 }
 
@@ -511,14 +466,10 @@ button:hover {
   border-radius: 8px;
   margin-top: 10px;
   display: flex;
-  justify-items: center;
 }
 
 h6 {
-  position: relative;
   height: 24px;
-  left: 76px;
-  right: 12px;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -526,42 +477,34 @@ h6 {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  margin-left: 20px;
   color: #253858;
 }
 
 .Contact-me {
-  /* position: absolute; */
-  width: 375px;
+  background: #6070ff url(./media/contact-form-shapes@2x.png) no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
   height: 778px;
   left: 0;
   top: 5410px;
-  background: #6070ff;
   border-radius: 80px 0 0 0;
 }
 
 .Contact-me h2 {
-  /* position: absolute; */
   padding: 103px 0 12px 0;
-  width: 375px;
   height: 56px;
-  left: -213px;
   top: 4734px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-
-  /* display: flex; */
-  align-items: center;
-  text-align: center;
   color: #fff;
 }
 
 .Contact-me p {
-  /* position: absolute; */
-  background-image: url(media/contact\ form.png);
-  background-repeat: no-repeat;
   padding: 0 24px 87px 24px;
   height: 102px;
   left: 24px;
@@ -576,12 +519,9 @@ h6 {
 }
 
 .forms {
-  padding: 60px 0 0 24px;
-
-  /* display: flex; */
+  padding-top: 60px;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
 }
 
 .forms ul {
@@ -631,14 +571,164 @@ h6 {
 }
 
 .form button {
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #6070ff;
 }
 
 .get-in-touch {
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) {
+  .Template-1 {
+    position: absolute;
+    width: 100%;
+  }
+
+  .header-background-mobile {
+    height: 916px;
+  }
+
+  .Toolbar img {
+    display: none;
+  }
+
+  .Toolbar ul {
+    display: flex;
+    list-style-type: none;
+    color: #344563;
+  }
+
+  .main-section {
+    padding: 289px 260px 0 260px;
+    background-image: url(./media/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-section-title h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .Card-Works {
+    flex-direction: row;
+    height: 496px;
+  }
+
+  .Card-Works:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .Snapshoot-Portfolio img {
+    width: 544px;
+    height: 448px;
+  }
+
+  .Left-Block {
+    width: 544px;
+    height: 445px;
+    padding: 24px;
+  }
+
+  .Primary-Text h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .Primary-Text ul {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .canopy {
+    color: #344563;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .Tags {
+    padding-top: 12px;
+  }
+
+  .Tags-ruby {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #ebebff;
+    border-radius: 8px;
+  }
+
+  .Action {
+    padding-top: 30px;
+  }
+
+  .About-myself {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .TOP {
+    padding-left: 142px;
+    height: 392px;
+  }
+
+  .TOP h2 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .TOP p {
+    width: 447px;
+  }
+
+  .Skill-List {
+    width: 684px;
+    height: 360px;
+  }
+
+  .Skill-List ul {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .frame0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 120px;
+  }
+
+  h6 {
+    margin-left: 0;
+  }
+
+  .Contact-me {
+    background-image: url(./media/contact-form-shapes@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Contact-me p {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30%;
+    align-items: center;
+    height: 102px;
+  }
+
+  .forms {
+    flex-direction: column;
+    align-items: center;
+  }
 }
