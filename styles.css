@@ -171,6 +171,16 @@ header {
   list-style-type: none;
 }
 
+.Snapshoot-Portfolio img {
+  height: 220px;
+  background: url(blog_drbl_4x.png);
+  border-radius: 8px;
+}
+
+.Social-Media img {
+  margin-right: 15px;
+}
+
 .social-media-icons img {
   margin-right: 15px;
 }
@@ -210,12 +220,6 @@ header {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-}
-
-.Snapshoot-Portfolio img {
-  height: 220px;
-  background: url(blog_drbl_4x.png);
-  border-radius: 8px;
 }
 
 .Left-Block {
@@ -411,10 +415,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.Social-Media img {
-  margin-right: 15px;
 }
 
 .TOP-connect {
@@ -850,57 +850,6 @@ h6 {
   color: #6070ff;
 }
 
-.button {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  padding: 12px;
-  gap: 10px;
-  width: 130px;
-  height: 48px;
-  border: 1px solid #7f8cff;
-  background: #fff;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
-button:enabled {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  left: 100px;
-  background: #fff;
-  border: 1px solid #7f8cff;
-  border-radius: 8px;
-}
-
-button:hover {
-  display: flex;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 140px;
-  height: 48px;
-  background: #2230d2;
-  border-radius: 8px;
-}
-
-.resume {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 162px;
-  height: 48px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
 .resume p {
   color: #396df2;
   width: 138px;
@@ -916,31 +865,6 @@ h5 {
   justify-content: flex-start;
   color: #000;
   margin-bottom: 10px;
-}
-
-.frame0 {
-  width: 303px;
-  height: 66.72px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  margin-top: 10px;
-  display: flex;
-  justify-items: center;
-}
-
-h6 {
-  position: relative;
-  height: 24px;
-  left: 76px;
-  right: 12px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  color: #253858;
 }
 
 .languages-ul {
@@ -1021,18 +945,6 @@ h6 {
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
-  border: 1px solid #60c095;
-  border-radius: 8px;
-}
-
-#textarea {
-  height: 100px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #091e42;
-  padding: 12px;
   border: 1px solid #60c095;
   border-radius: 8px;
 }
