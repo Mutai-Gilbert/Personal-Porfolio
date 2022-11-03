@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -224,8 +224,30 @@ header {
   flex-direction: column;
   padding: 0;
   gap: 12px;
-  width: 295px;
   height: 80px;
+}
+
+.Primary-Text ul {
+  padding-top: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #6b778c;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  height: 32px;
+}
+
+.canopy {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .bullet {
@@ -236,22 +258,12 @@ header {
 }
 
 .Primary-Text h2 {
-  width: 295px;
   height: 36px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
   color: #172b4d;
-}
-
-.Primary-Text ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 7px;
-  height: 32px;
 }
 
 .Left-Block p {
@@ -624,12 +636,21 @@ h6 {
 
   .Primary-Text h2 {
     font-weight: 700;
-    font-size: 31px;
+    font-size: 40px;
     line-height: 52px;
   }
 
   .Primary-Text ul {
-    padding-top: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .canopy {
+    color: #344563;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .Tags {
@@ -661,7 +682,7 @@ h6 {
 
   .TOP h2 {
     font-weight: 700;
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .TOP p {
