@@ -23,7 +23,7 @@ The objectives of this project is to:
 
 ## Live Demo
 
-[Portfolio Link](https://github.com/Mutai-Gilbert/Responsive-Personal-Porfolio)
+[Portfolio Link](https://mutai-gilbert.github.io/Responsive-Personal-Porfolio/)
 
 ## Getting Started
 
