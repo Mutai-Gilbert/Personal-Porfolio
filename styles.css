@@ -234,7 +234,7 @@ header {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #6b778c;
+  /* color: #7a869a; */
   list-style-type: none;
   display: flex;
   flex-direction: row;
