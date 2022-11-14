@@ -63,8 +63,9 @@ body {
 }
 
 .Template-1 {
-  position: absolute;
-  width: 375px;
+  /* position: absolute; */
+  width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -117,8 +118,30 @@ header {
   color: #6070ff;
 }
 
-.Toolbar ul {
+.df {
+  display: flex;
+}
+
+.nav ul {
   display: none;
+  padding: 50px 15px 15px 20px;
+  list-style: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #FFFFFF;
+  background: #6070FF;
+}
+
+span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: 2px solid #67798E;
 }
 
 .main-section {
