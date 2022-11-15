@@ -195,11 +195,13 @@ span {
   background: #e5e5e5;
   flex-direction: column;
   align-items: center;
+  height: 2788px;
   left: 0;
   top: 718px;
 }
 
 .Card-Works {
+  top: 114px;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
@@ -207,10 +209,6 @@ span {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-}
-
-.one {
-  padding: 114px 0 88px 0;
 }
 
 .Snapshoot-Portfolio img {
