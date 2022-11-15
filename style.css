@@ -621,7 +621,6 @@ h6 {
     list-style-type: none;
     height: 0;
     padding: 0 100px;
-
     backdrop-filter: none;
     background: none;
     color: #344563;
@@ -661,7 +660,6 @@ h6 {
   }
 
   .Left-Block {
-
     width: 544px;
     height: 445px;
     padding: 24px;
