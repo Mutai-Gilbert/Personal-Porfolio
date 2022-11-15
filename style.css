@@ -87,7 +87,6 @@ header {
   padding: 20px 20px;
 }
 
-
 .Toolbar {
   height: 48px;
 }
@@ -98,7 +97,7 @@ header {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .nav .logo {
@@ -131,7 +130,7 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  background: #6070FF;
+  background: #6070ff;
 }
 
 span {
@@ -139,7 +138,7 @@ span {
   right: 20px;
   top: 20px;
   color: #fff;
-  border: 2px solid #67798E;
+  border: 2px solid #67798e;
 }
 
 .main-section {
