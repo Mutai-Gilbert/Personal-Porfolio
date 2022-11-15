@@ -87,26 +87,18 @@ header {
   padding: 20px 20px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .Toolbar {
   height: 48px;
 }
 
 .Toolbar a {
-  display: flex;
-  width: 96px;
-  height: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #344563;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
 }
 
 .nav .logo {
@@ -118,11 +110,17 @@ header {
   color: #6070ff;
 }
 
-.df {
+.nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav ul {
+.df {
+  display: flex !important;
+}
+
+.nav-menu {
   display: none;
   padding: 50px 15px 15px 20px;
   list-style: none;
@@ -133,7 +131,6 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  color: #FFFFFF;
   background: #6070FF;
 }
 
@@ -141,6 +138,7 @@ span {
   position: absolute;
   right: 20px;
   top: 20px;
+  color: #fff;
   border: 2px solid #67798E;
 }
 
@@ -159,8 +157,8 @@ span {
 .main-section-title h1 {
   padding: 0 24px 12px 24px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 32px;
   line-height: 52px;
   color: #172b4d;
   display: flex;
