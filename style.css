@@ -142,14 +142,12 @@ span {
 }
 
 .main-section {
-  /* position: absolute; */
-  padding-top: 92px;
+  padding: 92px 0 0 24px;
   background-image: url("./media/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
 }
 
 .main-section-title h1 {
-  padding: 0 24px 12px 24px;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -158,14 +156,14 @@ span {
 }
 
 .main-section p {
-  padding-left: 24px;
+  padding-bottom: 12px;
   font-size: 15px;
   height: auto;
   flex-direction: column;
 }
 
 .connect {
-  padding: 0 24px 12px 24px;
+  padding-bottom: 12px;
   color: #7f8cff;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -175,7 +173,6 @@ span {
 }
 
 .social-media-icons {
-  padding: 0 24px 12px 24px;
   height: 20px;
   display: flex;
   flex-direction: row;
