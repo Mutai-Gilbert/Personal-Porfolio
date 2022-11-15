@@ -198,7 +198,6 @@ span {
   background: #e5e5e5;
   flex-direction: column;
   align-items: center;
-  height: 2708px;
   left: 0;
   top: 718px;
 }
@@ -227,7 +226,7 @@ span {
   align-items: flex-start;
   gap: 12px;
   width: 295px;
-  height: 288px;
+  height: auto;
 }
 
 .Primary-Text {
@@ -445,7 +444,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 327px;
 }
 
 .Frame-12 h3 {
@@ -630,10 +628,11 @@ h6 {
   }
 
   .main-section {
-    padding: 289px 260px 0 260px;
     background-image: url(./media/Header\ bg@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    padding: 142px;
   }
 
   .main-section-title h1 {
@@ -658,7 +657,7 @@ h6 {
   }
 
   .Left-Block {
-    width: 544px;
+    width: 384px;
     height: 445px;
     padding: 24px;
   }
@@ -705,12 +704,13 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 142px;
   }
 
   .TOP {
     height: 392px;
     justify-content: space-between;
-    padding-left: 142px;
+    padding-left: 24px;
   }
 
   .TOP h2 {
@@ -723,7 +723,6 @@ h6 {
   }
 
   .Skill-List {
-    width: 684px;
     height: 360px;
   }
 
