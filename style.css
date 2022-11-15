@@ -142,6 +142,7 @@ span {
 }
 
 .main-section {
+  /* position: absolute; */
   padding-top: 92px;
   background-image: url("./media/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
@@ -179,7 +180,6 @@ span {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
   list-style-type: none;
 }
 
