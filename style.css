@@ -222,10 +222,10 @@ span {
 }
 
 .Left-Block {
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
   gap: 12px;
   width: 295px;
   height: 288px;
@@ -280,7 +280,6 @@ span {
 }
 
 .Left-Block p {
-  width: 295px;
   height: 76px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -666,6 +665,8 @@ h6 {
   }
 
   .Primary-Text h2 {
+    width: 496px;
+    height: 46px;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -701,14 +702,16 @@ h6 {
   }
 
   .About-myself {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
   .TOP {
-    padding-left: 142px;
     height: 392px;
+    justify-content: space-between;
+    padding-left: 142px;
   }
 
   .TOP h2 {
@@ -717,7 +720,7 @@ h6 {
   }
 
   .TOP p {
-    width: 447px;
+    width: 410px;
   }
 
   .Skill-List {
@@ -754,7 +757,7 @@ h6 {
   .Contact-me p {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30%;
+    padding-bottom: 24px;
     align-items: center;
     height: 102px;
   }
