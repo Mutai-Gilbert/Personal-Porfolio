@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gilbert Mutai's Personal portfolio</title>
 
-  <link rel="Stylesheet" href="./styles.css" />
+  <link rel="Stylesheet" href="./style.css" />
 </head>
 
 
@@ -18,6 +18,25 @@
       <header class="Toolbar">
         <nav class="nav">
           <a href="#" class="logo">My Logo</a>
+
+          <div class="menu-icon">
+            <img src="./media/Union.png" alt="Union">
+
+            <ul class="nav-menu">
+              <span class="x">X</span>
+              <li class="mobile-menu">
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li class="mobile-menu">
+                <a href="#about">About</a>
+              </li>
+              <li class="mobile-menu">
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+<!-- =======
           <img src="./media/Union.png" alt="An hamburger button" width="30px">
           <ul>
             <li>
@@ -30,6 +49,7 @@
               <a href="">Contact</a>
             </li>
           </ul>
+>>>>>>> main -->
         </nav>
 
       </header>
@@ -86,7 +106,7 @@
 
     <!--These are my projects-->
 
-    <section class="Works">
+    <section class="Works" id="portfolio">
 
       <div class="Card-Works">
         <div class="Snapshoot-Portfolio">
@@ -99,10 +119,10 @@
 
             <ul>
               <li class="canopy">CANOPY</li>
-              <li class="bullet">               
+              <li class="bullet">
               </li>
               <li>Back End Dev</li>
-              <li class="bullet">               
+              <li class="bullet">
               </li>
               <li>2015</li>
             </ul>
@@ -146,10 +166,10 @@
 
             <ul>
               <li class="canopy">FACEBOOK</li>
-              <li class="bullet">               
+              <li class="bullet">
               </li>
               <li>Full Stack Dev</li>
-              <li class="bullet">               
+              <li class="bullet">
               </li>
               <li>2015</li>
             </ul>
@@ -196,10 +216,10 @@
 
             <ul>
               <li class="canopy">FACEBOOK</li>
-              <li class="bullet">               
+              <li class="bullet">
               </li>
               <li>Full Stack Dev</li>
-              <li class="bullet">               
+              <li class="bullet">
               </li>
               <li>2015</li>
             </ul>
@@ -244,10 +264,10 @@
 
             <ul>
               <li class="canopy">Uber</li>
-              <li class="bullet">               
+              <li class="bullet">
               </li>
               <li>Lead Developer</li>
-              <li class="bullet">               
+              <li class="bullet">
               </li>
               <li>2018</li>
             </ul>
@@ -287,7 +307,7 @@
 
     <!--About Myself-->
 
-    <section class="About-myself">
+    <section class="About-myself" id="about">
 
       <div class="TOP">
 
@@ -341,7 +361,7 @@
         <!--Get my resume-->
 
 
-        <div class="Action resume">
+        <div class="Action resume" id="about">
           <button>Get my resume</button>
         </div>
 
@@ -391,7 +411,7 @@
     </section>
 
 
-    <section class="Contact-me">
+    <section class="Contact-me" id="contact">
 
       <h2> Contact me</h2>
 
@@ -424,6 +444,10 @@
 
     </section>
   </section>
+
+
+  <script src="./app.js"></script>
+
 
 </body>
 

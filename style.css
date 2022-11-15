@@ -19,6 +19,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  cursor: pointer;
 }
 
 input,
@@ -63,8 +64,9 @@ body {
 }
 
 .Template-1 {
-  position: absolute;
-  width: 375px;
+  /* position: absolute; */
+  width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -86,26 +88,17 @@ header {
   padding: 20px 20px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .Toolbar {
   height: 48px;
 }
 
 .Toolbar a {
-  display: flex;
-  width: 96px;
-  height: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #344563;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
 }
 
 .nav .logo {
@@ -117,42 +110,64 @@ header {
   color: #6070ff;
 }
 
-.Toolbar ul {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.df {
+  display: flex !important;
+}
+
+.nav-menu {
   display: none;
+  padding: 50px 15px 15px 20px;
+  list-style: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background: rgba(46, 64, 228, 0.7);
+}
+
+span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  border: 2px solid #67798e;
+  cursor: pointer;
 }
 
 .main-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  position: absolute;
-  height: 604px;
-  top: 92px;
+  padding: 92px 0 0 24px;
   background-image: url("./media/header-shapes\ mobile@2x.svg");
   background-repeat: no-repeat;
 }
 
 .main-section-title h1 {
-  padding: 0 24px 12px 24px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 32px;
   line-height: 52px;
   color: #172b4d;
-  display: flex;
-  align-items: center;
 }
 
 .main-section p {
-  padding: 0 24px 12px 24px;
+  padding-bottom: 12px;
   font-size: 15px;
   height: auto;
   flex-direction: column;
 }
 
 .connect {
-  padding: 0 24px 12px 24px;
+  padding-bottom: 12px;
   color: #7f8cff;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -162,12 +177,10 @@ header {
 }
 
 .social-media-icons {
-  padding: 0 24px 12px 24px;
   height: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
   list-style-type: none;
 }
 
@@ -180,40 +193,38 @@ header {
 /* Start of Works section */
 
 .Works {
+  position: absolute;
+  width: 100%;
   background: #e5e5e5;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
-  gap: 88px;
+  height: 2708px;
   left: 0;
   top: 718px;
 }
 
 .Card-Works {
-  box-sizing: border-box;
   display: flex;
+  margin: 80px 20px;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  gap: 12px;
-  height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
 .Snapshoot-Portfolio img {
-  height: 220px;
   background: url(blog_drbl_4x.png);
   border-radius: 8px;
 }
 
 .Left-Block {
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
   gap: 12px;
   width: 295px;
   height: 288px;
@@ -268,7 +279,6 @@ header {
 }
 
 .Left-Block p {
-  width: 295px;
   height: 76px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -361,7 +371,9 @@ button:hover {
 }
 
 .About-myself {
-  display: flex;
+  /* display: flex; */
+  position: absolute;
+  top: 3438px;
   flex-direction: column;
   align-items: center;
   padding: 114px 24px;
@@ -424,7 +436,6 @@ button:hover {
 }
 
 .Skill-List {
-  padding: 0 24px 145px 24px;
   display: flex;
   flex-direction: column;
   height: 464.15px;
@@ -483,13 +494,16 @@ h6 {
 }
 
 .Contact-me {
+  position: absolute;
   background: #6070ff url(./media/contact-form-shapes@2x.png) no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   height: 778px;
   left: 0;
-  top: 5410px;
+  top: 4503px;
   border-radius: 80px 0 0 0;
 }
 
@@ -506,8 +520,7 @@ h6 {
 }
 
 .Contact-me p {
-  padding: 0 24px 87px 24px;
-  height: 102px;
+  padding-bottom: 12px;
   left: 24px;
   margin-top: 40px;
   font-family: 'Poppins', sans-serif;
@@ -520,7 +533,6 @@ h6 {
 }
 
 .forms {
-  padding-top: 60px;
   flex-direction: column;
   align-items: center;
 }
@@ -532,7 +544,7 @@ h6 {
 #name {
   padding-left: 24px;
   margin-bottom: 20px;
-  width: 327px;
+  width: 300px;
   height: 48px;
   font-style: normal;
   font-weight: 400;
@@ -546,7 +558,7 @@ h6 {
 #email {
   padding-left: 24px;
   margin-bottom: 20px;
-  width: 327px;
+  width: 300px;
   height: 48px;
   font-style: normal;
   font-weight: 400;
@@ -558,7 +570,7 @@ h6 {
 }
 
 #textarea {
-  width: 327px;
+  width: 300px;
   height: 170px;
   margin-bottom: 20px;
   font-style: normal;
@@ -596,9 +608,24 @@ h6 {
     display: none;
   }
 
-  .Toolbar ul {
+  .x {
+    display: none;
+  }
+
+  .nav-menu {
+    position: relative;
     display: flex;
+    flex-direction: row;
     list-style-type: none;
+    height: 0;
+    padding: 0 100px;
+    backdrop-filter: none;
+    background: none;
+    color: #344563;
+  }
+
+  .nav-menu li a {
+    font-size: 15px;
     color: #344563;
   }
 
@@ -616,6 +643,7 @@ h6 {
 
   .Card-Works {
     flex-direction: row;
+    justify-content: space-around;
     height: 496px;
   }
 
@@ -636,6 +664,8 @@ h6 {
   }
 
   .Primary-Text h2 {
+    width: 496px;
+    height: 46px;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -671,14 +701,16 @@ h6 {
   }
 
   .About-myself {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
   .TOP {
-    padding-left: 142px;
     height: 392px;
+    justify-content: space-between;
+    padding-left: 142px;
   }
 
   .TOP h2 {
@@ -687,7 +719,7 @@ h6 {
   }
 
   .TOP p {
-    width: 447px;
+    width: 410px;
   }
 
   .Skill-List {
@@ -718,12 +750,13 @@ h6 {
     background-image: url(./media/contact-form-shapes@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
   }
 
   .Contact-me p {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30%;
+    padding-bottom: 24px;
     align-items: center;
     height: 102px;
   }
