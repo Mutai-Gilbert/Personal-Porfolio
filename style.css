@@ -237,15 +237,13 @@ span {
   height: 80px;
 }
 
-.Primary-Text ul {
+.work-info {
   padding-top: 12px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-
-  /* color: #7a869a; */
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -277,7 +275,7 @@ span {
   color: #172b4d;
 }
 
-.Left-Block p {
+.workblock-p {
   height: 76px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -287,24 +285,26 @@ span {
   color: #344563;
 }
 
-.Tags {
+.tags {
   display: flex;
   align-items: center;
   gap: 8px;
   height: 24px;
 }
 
-.Tags-html {
+.tags-skill {
   display: flex;
   align-items: center;
   padding: 4px 12px;
-  width: 53px;
+  width: 98px;
   height: 24px;
-  background: #ebebff;
+  background: #6070ff;
   border-radius: 8px;
+
+  /* color: #6070FF; */
 }
 
-.Tags-ruby {
+/* .Tags-ruby {
   display: none;
 }
 
@@ -331,29 +331,24 @@ span {
 .Tags-content {
   position: relative;
   color: #101b79;
-}
+} */
 
-.Action {
-  width: 295px;
-  height: 72px;
-}
-
-.button {
+.action-button {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
-  width: 130px;
-  height: 48px;
+  width: 295px;
+  height: 72px;
   left: 0;
   top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
 
-button:enabled {
+.action-button:enabled {
   background: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
@@ -362,7 +357,7 @@ button:enabled {
   color: #396df2;
 }
 
-button:hover {
+.action-button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
@@ -631,7 +626,6 @@ h6 {
     background-image: url(./media/Header\ bg@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     padding: 142px;
   }
 
@@ -670,7 +664,7 @@ h6 {
     line-height: 52px;
   }
 
-  .Primary-Text ul {
+  .work-info {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;

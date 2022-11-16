@@ -69,11 +69,11 @@ const projectDbs = [
   },
 ];
 
-function iterateThroughProject(id) {
+function popProject(id) {
   const projects = projectDbs;
 
   let project;
-  for (let i = 0; i < projectDbs.length; i++) {
+  for (let i = 0; i < projectDbs.length; i += 1) {
     if (projects[i].id === id) {
       project = projects[i];
     }
@@ -115,14 +115,15 @@ function iterateThroughProject(id) {
 
     const image = document.createElement();
     image.classList.add('work-image');
-    image.innerHTML = `< img class="img" src="${project.imageUrl}" alt="${project.title}" />`;
+    image.innerHTML = `< img class='img' src='${project.imageUrl}' alt='${project.title}' />`;
 
     // Projects Blocks
 
     const projectBlock = document.createElement();
     projectBlock.classList.add('project-block');
 
-    // left block 
+    // left block
+
     const leftBlock = document.createElement();
     leftBlock.classList.add('left-block');
 
@@ -148,22 +149,135 @@ function iterateThroughProject(id) {
       skills.appendChild(skill);
     });
 
-    // border-bottom 
+    // action
 
-    const borderBottom = document.createElement();
-    borderBottom.classList.add('border');
+    const action = document.createElement();
+    action.classList.add('action');
 
-    // livelink 
+    // livelink
 
     const liveLink = document.createElement('a');
     liveLink.classList.add('see-live');
     liveLink.setAttribute('href', project.liveLink);
     liveLink.innerHTML = 'See live  <span class="button"> <img src="./media/livelink.png" alt="Live"/> </span>';
 
-    // source link 
+    // source link
     const sourceLink = document.createElement('a');
     sourceLink.classList.add('source-link');
     sourceLink.setAttribute('href', project.sourceLink);
     sourceLink.innerHTML = 'See Source  <span class="button"> <img src="./media/sourcelink.png" alt="Live"/> </span>';
+
+    // append the livelink and source link
+    action.append(liveLink, sourceLink);
+
+    // append skills and actions
+
+    rightBlock.append(skills, action);
+
+    // append leftblock and right block
+
+    projectBlock.append(leftBlock, rightBlock);
+
+    // append projectBlock and other subsections to the card.
+
+    divSection.append(cardTitle, closeIcon, work, image, projectBlock);
+
+    // append the cards to the section
+
+    section.append(divSection);
+
+    // append the section to the main
+
+    document.querySelector('main').append(section);
+
+    // add event listener
+
+    const closePopup = document.getElementById('close-icon');
+    closePopup.addEventListener('click', () => {
+      document.querySelector('main').remove(section);
+    });
   }
 }
+
+// Implementing existing project
+
+function popAllProject() {
+  // first portfolio
+  const portfolio = document.getElementById('portfolio');
+  portfolio.classList.add('works');
+  projectDbs.forEach((project) => {
+    // Dom for each card we select
+    const card = document.createElement();
+    card.classList.add('Card-Works');
+
+    const snapshootPortfolio = document.createElement();
+    snapshootPortfolio.classList.add('Snapshoot-Portfolio');
+    snapshootPortfolio.innerHTML = `<img class='card-img' src='${project.imageUrl}' alt='${project.title}'/>`;
+    card.appendChild(snapshootPortfolio);
+
+    // Specific details on work done
+
+    // Work done block work details
+
+    const workBlock = document.createElement();
+    workBlock.classList.add('Left-Block');
+
+    // Project Title
+    const projectTitle = document.createElement('h2');
+    projectTitle.classList.add('Primary-Text');
+    projectTitle.innerText = project.title;
+    workBlock.appendChild(projectTitle);
+
+    // the ul elements
+
+    const frame2 = document.createElement('ul');
+    frame2.classList.add('work-info');
+
+    // the li items
+
+    project.frame.forEach((item) => {
+      const itemsFrame2 = document.createElement('li');
+      itemsFrame2.classList.add('items-frame2');
+      itemsFrame2.innerText = item;
+      frame2.appendChild(itemsFrame2);
+    });
+
+    workBlock.appendChild(frame2);
+
+    // the content on the work block
+
+    const workBlockContent = document.createElement('p');
+    workBlockContent.classList.add('workblock-p');
+    workBlockContent.innerText = project.p;
+    workBlock.appendChild(workBlockContent);
+
+    // Tags
+    const tags = document.createElement('ul');
+    tags.classList.add('tags');
+
+    project.frame.forEach((skill) => {
+      const tag = document.createElement('li');
+      tag.classList.add('tag-skill');
+      tag.innerText = skill;
+      tags.appendChild(tag);
+    });
+    workBlock.appendChild(tags);
+
+    // The button/action
+    const actionButton = document.createElement('button');
+    actionButton.classList.add('action-button');
+    actionButton.innerText = 'See More';
+    actionButton.setAttribute('id', project.id);
+    actionButton.addEventListener('click', () => {
+      popProject(project.id);
+    });
+    workBlock.appendChild(actionButton);
+
+    card.appendChild(workBlock);
+    portfolio.appendChild(card);
+  });
+}
+
+window.onload = () => {
+  popAllProject();
+};
