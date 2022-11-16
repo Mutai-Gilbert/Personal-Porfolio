@@ -1,7 +1,7 @@
 // Navigation menu
 const menu = document.querySelector('.menu-icon');
 const ul = document.querySelector('.nav-menu');
-const X = document.querySelector('x');
+const crossIcon = document.querySelector('times');
 const mobileMenu = document.querySelectorAll('.mobile-menu');
 let menuState = false;
 
@@ -15,16 +15,17 @@ function toggleMenu() {
   }
 }
 menu.addEventListener('click', toggleMenu);
-X.addEventListener('click', toggleMenu);
 mobileMenu.forEach((item) => {
   item.addEventListener('click', toggleMenu);
 });
+
+crossIcon.addEventListener('click', toggleMenu);
 
 // Pojects
 
 const projectDbs = [
   {
-    id: 'card-1',
+    id: 'project1',
     title: 'Tonic',
     frame: ['Canopy', 'Back End Dev', 2015],
     primaryText: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -35,7 +36,7 @@ const projectDbs = [
     sourceLink: '#',
   },
   {
-    id: 'card-2',
+    id: 'project2',
     title: 'Multi-Post Stories',
     frame: ['Facebook', 'Full Stack Dev', 2015],
     primaryText: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
@@ -46,7 +47,7 @@ const projectDbs = [
     sourceLink: '#',
   },
   {
-    id: 'card-3',
+    id: 'project3',
     title: 'FACEBOOK 360',
     frame: ['Facebook', 'Full Stack Dev', 2015],
     primaryText: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
@@ -57,7 +58,7 @@ const projectDbs = [
     sourceLink: '#',
   },
   {
-    id: 'card-4',
+    id: 'project4',
     title: 'Uber Navigation',
     frame: ['Uber', 'Lead Developer', 2018],
     primaryText: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
@@ -165,7 +166,7 @@ function popProject(id) {
     const sourceLink = document.createElement('a');
     sourceLink.classList.add('source-link');
     sourceLink.setAttribute('href', project.sourceLink);
-    sourceLink.innerHTML = 'See Source  <span class="button"> <img src="./media/sourcelink.png" alt="Live"/> </span>';
+    sourceLink.innerHTML = 'See Live  <span class="button"> <img src="./media/sourcelink.png" alt="Live"/> </span>';
 
     // append the livelink and source link
     action.append(liveLink, sourceLink);
@@ -207,10 +208,10 @@ function popAllProject() {
   portfolio.classList.add('works');
   projectDbs.forEach((project) => {
     // Dom for each card we select
-    const card = document.createElement();
+    const card = document.createElement('div');
     card.classList.add('Card-Works');
 
-    const snapshootPortfolio = document.createElement();
+    const snapshootPortfolio = document.createElement('div');
     snapshootPortfolio.classList.add('Snapshoot-Portfolio');
     snapshootPortfolio.innerHTML = `<img class='card-img' src='${project.imageUrl}' alt='${project.title}'/>`;
     card.appendChild(snapshootPortfolio);
@@ -219,7 +220,7 @@ function popAllProject() {
 
     // Work done block work details
 
-    const workBlock = document.createElement();
+    const workBlock = document.createElement('div');
     workBlock.classList.add('Left-Block');
 
     // Project Title
