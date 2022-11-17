@@ -1,7 +1,14 @@
+function dcl(t = 'div') {
+  if (!t) {
+    t = 'div';
+  }
+  return document.createElement(t);
+}
+
 // Navigation menu
 const menu = document.querySelector('.menu-icon');
 const ul = document.querySelector('.nav-menu');
-const crossIcon = document.querySelector('times');
+// const crossIcon = document.querySelector('times');
 const mobileMenu = document.querySelectorAll('.mobile-menu');
 let menuState = false;
 
@@ -19,7 +26,7 @@ mobileMenu.forEach((item) => {
   item.addEventListener('click', toggleMenu);
 });
 
-crossIcon.addEventListener('click', toggleMenu);
+// crossIcon.addEventListener('click', toggleMenu);
 
 // Pojects
 
@@ -81,32 +88,32 @@ function popProject(id) {
   }
 
   if (project) {
-    const section = document.createElement('section');
+    const section = dcl('section');
     section.setAttribute('id', project.id);
     section.classList.add('card-works');
 
-    const divSection = document.createElement();
+    const divSection = dcl('div');
     divSection.classList.add('cards');
 
     // Title
-    const cardTitle = document.createElement('h1');
+    const cardTitle = dcl('h2');
     cardTitle.classList.add('card-title');
     cardTitle.innerText = project.title;
 
     // close-icon
-    const closeIcon = document.createElement('span');
+    const closeIcon = dcl('span');
     closeIcon.setAttribute('id', 'close-icon');
     closeIcon.innerHTML = '<img src="./media/close-icon2.png" alt="X">';
 
     // work information
 
-    const work = document.createElement('ul');
+    const work = dcl('ul');
     work.classList.add('work');
 
     // for each work information
 
     project.frame.forEach((item) => {
-      const workItem = document.createElement('li');
+      const workItem = dcl('li');
       workItem.classList.add('work-item');
       workItem.innerText = item;
       work.appendChild(workItem);
@@ -114,56 +121,56 @@ function popProject(id) {
 
     // The image
 
-    const image = document.createElement();
+    const image = dcl('div');
     image.classList.add('work-image');
     image.innerHTML = `< img class='img' src='${project.imageUrl}' alt='${project.title}' />`;
 
     // Projects Blocks
 
-    const projectBlock = document.createElement();
+    const projectBlock = dcl();
     projectBlock.classList.add('project-block');
 
     // left block
 
-    const leftBlock = document.createElement();
+    const leftBlock = dcl();
     leftBlock.classList.add('left-block');
 
     // details on the left block
 
-    const detailsLeftBlock = document.createElement('p');
+    const detailsLeftBlock = dcl('p');
     detailsLeftBlock.classList.add('paragraph');
     detailsLeftBlock.innerText = project.p;
     leftBlock.append(detailsLeftBlock);
 
     // right block
 
-    const rightBlock = document.createElement();
+    const rightBlock = dcl();
     rightBlock.classList.add('right-block');
 
     // skills category
 
-    const skills = document.createElement('ul');
+    const skills = dcl('ul');
     skills.classList.add('skills');
     skills.tags.forEach((item) => {
-      const skill = document.createElement('li');
+      const skill = dcl('li');
       skill.innerText = item;
       skills.appendChild(skill);
     });
 
     // action
 
-    const action = document.createElement();
+    const action = dcl();
     action.classList.add('action');
 
     // livelink
 
-    const liveLink = document.createElement('a');
+    const liveLink = dcl('a');
     liveLink.classList.add('see-live');
     liveLink.setAttribute('href', project.liveLink);
     liveLink.innerHTML = 'See live  <span class="button"> <img src="./media/livelink.png" alt="Live"/> </span>';
 
     // source link
-    const sourceLink = document.createElement('a');
+    const sourceLink = dcl('a');
     sourceLink.classList.add('source-link');
     sourceLink.setAttribute('href', project.sourceLink);
     sourceLink.innerHTML = 'See Live  <span class="button"> <img src="./media/sourcelink.png" alt="Live"/> </span>';
@@ -195,23 +202,22 @@ function popProject(id) {
 
     const closePopup = document.getElementById('close-icon');
     closePopup.addEventListener('click', () => {
-      document.querySelector('main').remove(section);
+      document.querySelector('.main').removeChild(section);
     });
   }
 }
 
 // Implementing existing project
-
 function popAllProject() {
   // first portfolio
   const portfolio = document.getElementById('portfolio');
   portfolio.classList.add('works');
   projectDbs.forEach((project) => {
     // Dom for each card we select
-    const card = document.createElement('div');
+    const card = dcl('div');
     card.classList.add('Card-Works');
 
-    const snapshootPortfolio = document.createElement('div');
+    const snapshootPortfolio = dcl('div');
     snapshootPortfolio.classList.add('Snapshoot-Portfolio');
     snapshootPortfolio.innerHTML = `<img class='card-img' src='${project.imageUrl}' alt='${project.title}'/>`;
     card.appendChild(snapshootPortfolio);
@@ -220,24 +226,24 @@ function popAllProject() {
 
     // Work done block work details
 
-    const workBlock = document.createElement('div');
+    const workBlock = dcl('div');
     workBlock.classList.add('Left-Block');
 
     // Project Title
-    const projectTitle = document.createElement('h2');
+    const projectTitle = dcl('h2');
     projectTitle.classList.add('Primary-Text');
     projectTitle.innerText = project.title;
     workBlock.appendChild(projectTitle);
 
     // the ul elements
 
-    const frame2 = document.createElement('ul');
+    const frame2 = dcl('ul');
     frame2.classList.add('work-info');
 
     // the li items
 
     project.frame.forEach((item) => {
-      const itemsFrame2 = document.createElement('li');
+      const itemsFrame2 = dcl('li');
       itemsFrame2.classList.add('items-frame2');
       itemsFrame2.innerText = item;
       frame2.appendChild(itemsFrame2);
@@ -247,17 +253,17 @@ function popAllProject() {
 
     // the content on the work block
 
-    const workBlockContent = document.createElement('p');
+    const workBlockContent = dcl('p');
     workBlockContent.classList.add('workblock-p');
     workBlockContent.innerText = project.p;
     workBlock.appendChild(workBlockContent);
 
     // Tags
-    const tags = document.createElement('ul');
+    const tags = dcl('ul');
     tags.classList.add('tags');
 
     project.frame.forEach((skill) => {
-      const tag = document.createElement('li');
+      const tag = dcl('li');
       tag.classList.add('tag-skill');
       tag.innerText = skill;
       tags.appendChild(tag);
@@ -265,15 +271,16 @@ function popAllProject() {
     workBlock.appendChild(tags);
 
     // The button/action
-    const actionButton = document.createElement('button');
+    const actionButton = dcl('button');
     actionButton.classList.add('action-button');
     actionButton.innerText = 'See More';
-    actionButton.setAttribute('id', project.id);
+    actionButton.setAttribute('id', 'project-button');
+
     actionButton.addEventListener('click', () => {
       popProject(project.id);
     });
-    workBlock.appendChild(actionButton);
 
+    workBlock.appendChild(actionButton);
     card.appendChild(workBlock);
     portfolio.appendChild(card);
   });
