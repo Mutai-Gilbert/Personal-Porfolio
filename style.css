@@ -293,38 +293,7 @@ span {
   height: 24px;
   background: #6070ff;
   border-radius: 8px;
-
-  /* color: #6070FF; */
 }
-
-/* .Tags-ruby {
-  display: none;
-}
-
-.Tags-css {
-  display: flex;
-  align-items: center;
-  padding: 4px 12px;
-  width: 45px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
-}
-
-.Tags-js {
-  display: flex;
-  align-items: center;
-  padding: 4px 12px;
-  width: 98px;
-  height: 25px;
-  background: #ebebff;
-  border-radius: 8px;
-}
-
-.Tags-content {
-  position: relative;
-  color: #101b79;
-} */
 
 .action-button {
   box-sizing: border-box;
@@ -751,4 +720,97 @@ h6 {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* Popup Window */
+
+.card-works {
+  background-color: #60c095;
+}
+
+.cards {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  gap: 8px;
+  padding: 24px;
+  max-width: 1156px;
+  margin: 25px 15px;
+  position: relative;
+}
+
+.work-image {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.work-image img {
+  max-width: 100%;
+}
+
+.article-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-block {
+  width: 100%;
+}
+
+.left-block.work_details_content {
+  text-align: justify;
+}
+
+.right-block {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.right-block .work_cats {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebecf0 !important;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.article-btn {
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  max-width: 146px;
+  margin: 10px;
+}
+
+.article-btn:hover {
+  background-color: #000530;
+  color: #fff;
+}
+
+.btn-icon {
+  margin-left: 10px;
+}
+
+#article-close {
+  align-self: flex-end;
+  cursor: pointer;
+  position: fixed;
 }

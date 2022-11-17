@@ -151,9 +151,9 @@ function popProject(id) {
 
     const skills = dcl('ul');
     skills.classList.add('skills');
-    skills.tags.forEach((item) => {
+    project.tags.forEach((tag) => {
       const skill = dcl('li');
-      skill.innerText = item;
+      skill.innerText = tag;
       skills.appendChild(skill);
     });
 
@@ -202,7 +202,7 @@ function popProject(id) {
 
     const closePopup = document.getElementById('close-icon');
     closePopup.addEventListener('click', () => {
-      document.querySelector('.main').removeChild(section);
+      document.querySelector('main').removeChild(section);
     });
   }
 }
@@ -274,7 +274,7 @@ function popAllProject() {
     const actionButton = dcl('button');
     actionButton.classList.add('action-button');
     actionButton.innerText = 'See More';
-    actionButton.setAttribute('id', 'project-button');
+    actionButton.setAttribute('id', project.id);
 
     actionButton.addEventListener('click', () => {
       popProject(project.id);
