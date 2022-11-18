@@ -280,10 +280,6 @@ span {
   object-fit: cover;
 }
 
-.tag-skill:nth-child(even) {
-  display: none;
-}
-
 .tags li {
   object-fit: cover;
   display: flex;
