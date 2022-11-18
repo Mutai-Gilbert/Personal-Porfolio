@@ -1,10 +1,3 @@
-function dcl(t = 'div') {
-  if (!t) {
-    t = 'div';
-  }
-  return document.createElement(t);
-}
-
 // Navigation menu
 const menu = document.querySelector('.menu-icon');
 const ul = document.querySelector('.nav-menu');
@@ -88,32 +81,32 @@ function popProject(id) {
   }
 
   if (project) {
-    const section = dcl('section');
+    const section = document.createElement('section');
     section.setAttribute('id', project.id);
     section.classList.add('card-works');
 
-    const divSection = dcl('div');
+    const divSection = document.createElement('div');
     divSection.classList.add('cards');
 
     // Title
-    const cardTitle = dcl('h2');
+    const cardTitle = document.createElement('h2');
     cardTitle.classList.add('card-title');
     cardTitle.innerText = project.title;
 
     // close-icon
-    const closeIcon = dcl();
+    const closeIcon = document.createElement('div');
     closeIcon.setAttribute('id', 'close-icon');
     closeIcon.innerHTML = '<img src="./media/close.png" alt="X">';
 
     // work information
 
-    const work = dcl('ul');
+    const work = document.createElement('ul');
     work.classList.add('work');
 
     // for each work information
 
     project.frame.forEach((item) => {
-      const workItem = dcl('li');
+      const workItem = document.createElement('li');
       workItem.classList.add('work-item');
       workItem.innerText = item;
       work.appendChild(workItem);
@@ -121,56 +114,56 @@ function popProject(id) {
 
     // The image
 
-    const image = dcl();
+    const image = document.createElement('div');
     image.classList.add('work-image');
     image.innerHTML = `<img class='card-img' src='${project.imageUrl}' alt='${project.title}'/>`;
 
     // Projects Blocks
 
-    const projectBlock = dcl();
+    const projectBlock = document.createElement('div');
     projectBlock.classList.add('project-block');
 
     // left block
 
-    const leftBlock = dcl();
+    const leftBlock = document.createElement('div');
     leftBlock.classList.add('left-block');
 
     // details on the left block
 
-    const detailsLeftBlock = dcl('p');
+    const detailsLeftBlock = document.createElement('p');
     detailsLeftBlock.classList.add('paragraph');
     detailsLeftBlock.innerText = project.p;
     leftBlock.append(detailsLeftBlock);
 
     // right block
 
-    const rightBlock = dcl();
+    const rightBlock = document.createElement('div');
     rightBlock.classList.add('right-block');
 
     // skills category
 
-    const skills = dcl('ul');
+    const skills = document.createElement('ul');
     skills.classList.add('skills');
     project.tags.forEach((tag) => {
-      const skill = dcl('li');
+      const skill = document.createElement('li');
       skill.innerText = tag;
       skills.appendChild(skill);
     });
 
     // action
 
-    const action = dcl();
+    const action = document.createElement('div');
     action.classList.add('action');
 
     // livelink
 
-    const liveLink = dcl('a');
+    const liveLink = document.createElement('a');
     liveLink.classList.add('see-live');
     liveLink.setAttribute('href', project.liveLink);
     liveLink.innerHTML = 'See live  <label class="see-l"> <img src="./media/link.png" alt="Live"/> </label>';
 
     // source link
-    const sourceLink = dcl('a');
+    const sourceLink = document.createElement('a');
     sourceLink.classList.add('source-link');
     sourceLink.setAttribute('href', project.sourceLink);
     sourceLink.innerHTML = 'See Live  <label class="source-l"> <img src="./media/sourcelink.png" alt="Live"/> </label>';
@@ -214,10 +207,10 @@ function popAllProject() {
   portfolio.classList.add('works');
   projectDbs.forEach((project) => {
     // Dom for each card we select
-    const card = dcl('div');
+    const card = document.createElement('div');
     card.classList.add('Card-Works');
 
-    const snapshootPortfolio = dcl('div');
+    const snapshootPortfolio = document.createElement('div');
     snapshootPortfolio.classList.add('Snapshoot-Portfolio');
     snapshootPortfolio.innerHTML = `<img class='card-img' src='${project.imageUrl}' alt='${project.title}'/>`;
     card.appendChild(snapshootPortfolio);
@@ -226,24 +219,24 @@ function popAllProject() {
 
     // Work done block work details
 
-    const workBlock = dcl('div');
+    const workBlock = document.createElement('div');
     workBlock.classList.add('Left-Block');
 
     // Project Title
-    const projectTitle = dcl('h2');
+    const projectTitle = document.createElement('h2');
     projectTitle.classList.add('Primary-Text');
     projectTitle.innerText = project.title;
     workBlock.appendChild(projectTitle);
 
     // the ul elements
 
-    const frame2 = dcl('ul');
+    const frame2 = document.createElement('ul');
     frame2.classList.add('work-info');
 
     // the li items
 
     project.frame.forEach((item) => {
-      const itemsFrame2 = dcl('li');
+      const itemsFrame2 = document.createElement('li');
       itemsFrame2.classList.add('items-frame2');
       itemsFrame2.innerText = item;
       frame2.appendChild(itemsFrame2);
@@ -253,17 +246,17 @@ function popAllProject() {
 
     // the content on the work block
 
-    const workBlockContent = dcl('p');
+    const workBlockContent = document.createElement('p');
     workBlockContent.classList.add('workblock-p');
     workBlockContent.innerText = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
     workBlock.appendChild(workBlockContent);
 
     // Tags
-    const tags = dcl('ul');
+    const tags = document.createElement('ul');
     tags.classList.add('tags');
 
     project.tags.forEach((skill) => {
-      const tag = dcl('li');
+      const tag = document.createElement('li');
       tag.classList.add('tag-skill');
       tag.innerText = skill;
       tags.appendChild(tag);
@@ -271,7 +264,7 @@ function popAllProject() {
     workBlock.appendChild(tags);
 
     // The button/action
-    const actionButton = dcl('button');
+    const actionButton = document.createElement('button');
     actionButton.classList.add('action-button');
     actionButton.innerText = 'See More';
     actionButton.setAttribute('id', project.id);

@@ -212,7 +212,6 @@ span {
 }
 
 .Left-Block {
-  padding-left: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
