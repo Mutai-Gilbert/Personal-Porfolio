@@ -218,6 +218,7 @@ span {
   gap: 12px;
   width: 295px;
   height: auto;
+  padding-left: 12px;
 }
 
 .Primary-Text {
@@ -328,7 +329,7 @@ span {
 .About-myself {
   /* display: flex; */
   position: absolute;
-  top: 3438px;
+  top: 3038px;
   flex-direction: column;
   align-items: center;
   padding: 114px 24px;
@@ -394,6 +395,7 @@ span {
   display: flex;
   flex-direction: column;
   height: 464.15px;
+  padding-top: 24px;
 }
 
 .Frame-12 {
@@ -457,7 +459,7 @@ h6 {
   text-align: center;
   height: 778px;
   left: 0;
-  top: 4503px;
+  top: 4150px;
   border-radius: 80px 0 0 0;
 }
 
@@ -650,12 +652,12 @@ h6 {
     flex-direction: row;
     justify-content: center;
     padding-left: 142px;
+    gap: 24px;
   }
 
   .TOP {
     height: 392px;
     justify-content: space-between;
-    padding-left: 24px;
   }
 
   .TOP h2 {
