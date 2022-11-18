@@ -123,7 +123,7 @@ function popProject(id) {
 
     const image = dcl();
     image.classList.add('work-image');
-    image.innerHTML = `< img src='${project.imageUrl}' alt='${project.title}' />`;
+    image.innerHTML = `<img class='card-img' src='${project.imageUrl}' alt='${project.title}'/>`;
 
     // Projects Blocks
 
@@ -167,13 +167,13 @@ function popProject(id) {
     const liveLink = dcl('a');
     liveLink.classList.add('see-live');
     liveLink.setAttribute('href', project.liveLink);
-    liveLink.innerHTML = 'See live  <label class="button"> <img src="./media/livelink.png" alt="Live"/> </label>';
+    liveLink.innerHTML = 'See live  <label class="see-l"> <img src="./media/link.png" alt="Live"/> </label>';
 
     // source link
     const sourceLink = dcl('a');
     sourceLink.classList.add('source-link');
     sourceLink.setAttribute('href', project.sourceLink);
-    sourceLink.innerHTML = 'See Live  <label class="button"> <img src="./media/sourcelink.png" alt="Live"/> </label>';
+    sourceLink.innerHTML = 'See Live  <label class="source-l"> <img src="./media/sourcelink.png" alt="Live"/> </label>';
 
     // append the livelink and source link
     action.append(liveLink, sourceLink);
