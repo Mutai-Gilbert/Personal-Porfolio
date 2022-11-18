@@ -101,9 +101,9 @@ function popProject(id) {
     cardTitle.innerText = project.title;
 
     // close-icon
-    const closeIcon = dcl('span');
+    const closeIcon = dcl();
     closeIcon.setAttribute('id', 'close-icon');
-    closeIcon.innerHTML = '<img src="./media/close-icon2.svg" alt="X">';
+    closeIcon.innerHTML = '<img src="./media/close.png" alt="X">';
 
     // work information
 
@@ -121,9 +121,9 @@ function popProject(id) {
 
     // The image
 
-    const image = dcl('div');
+    const image = dcl();
     image.classList.add('work-image');
-    image.innerHTML = `< img class='img' src='${project.imageUrl}' alt='${project.title}' />`;
+    image.innerHTML = `< img src='${project.imageUrl}' alt='${project.title}' />`;
 
     // Projects Blocks
 
@@ -167,13 +167,13 @@ function popProject(id) {
     const liveLink = dcl('a');
     liveLink.classList.add('see-live');
     liveLink.setAttribute('href', project.liveLink);
-    liveLink.innerHTML = 'See live  <span class="button"> <img src="./media/livelink.png" alt="Live"/> </span>';
+    liveLink.innerHTML = 'See live  <label class="button"> <img src="./media/livelink.png" alt="Live"/> </label>';
 
     // source link
     const sourceLink = dcl('a');
     sourceLink.classList.add('source-link');
     sourceLink.setAttribute('href', project.sourceLink);
-    sourceLink.innerHTML = 'See Live  <span class="button"> <img src="./media/sourcelink.png" alt="Live"/> </span>';
+    sourceLink.innerHTML = 'See Live  <label class="button"> <img src="./media/sourcelink.png" alt="Live"/> </label>';
 
     // append the livelink and source link
     action.append(liveLink, sourceLink);
