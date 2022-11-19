@@ -284,42 +284,69 @@ window.onload = () => {
 };
 
 /* Validate form */
-
-// Form Validation Section
-
-const form = document.getElementById('form');
-const formEmail = document.getElementById('email');
-const errorMessage = document.getElementById('error');
-const email = formEmail.value;
-form.addEventListener('submit', (e) => {
-  if (email.toLowerCase() !== email) {
-    e.preventDefault();
-    formEmail.classList.add('invalid');
-    errorMessage.classList.add('error');
-    errorMessage.innerText = 'Email should be lowercase!';
-  } else {
-    formEmail.classList.remove('invalid');
-    errorMessage.classList.remove('error');
-    form.submit();
-  }
-});
-// Preserve Storage Section
+// selecting input elements
 const formName = document.getElementById('name');
+const formEmail = document.getElementById('email');
 const formComment = document.getElementById('textarea');
 
-form.addEventListener('submit', () => {
-  const Data = {
-    Name: formName.value,
-    Email: formEmail.value,
-    Text: formComment.value,
-  };
-  localStorage.setItem('data', JSON.stringify(Data));
-});
-
-const AutoFiller = localStorage.getItem('data');
-if (AutoFiller) {
-  const DataStored = JSON.parse(localStorage.getItem('data'));
-  formName.value = DataStored.Name;
-  formEmail.value = DataStored.Email;
-  formComment.value = DataStored.Text;
+// Store formData in localStorage
+function loadLocalStorage() {
+  const formData = JSON.parse(window.localStorage.getItem('formData'));
+  if (formData) {
+    formName.value = formData.name;
+    formEmail.value = formData.email;
+    formComment.value = formData.message;
+  }
 }
+
+// OnChange function will store form data in localStorage
+function onChange(e) {
+  let formData = JSON.parse(localStorage.getItem('formData'));
+  if (!formData) {
+    formData = {};
+  }
+  // saving form data on localStorage
+  const m = e.target.name;
+  formData[m] = e.target.value;
+  formData = JSON.stringify(formData);
+  window.localStorage.setItem('formData', formData);
+}
+
+// Fire event on form input
+formName.addEventListener('change', onChange);
+formEmail.addEventListener('change', onChange);
+formComment.addEventListener('change', onChange);
+
+// Load Data in dom on the fly
+window.onload = () => {
+  loadLocalStorage();
+};
+
+// Form Validation
+function onSubmit(e) {
+  const typedEmail = document.getElementById('email');
+  const errorInfo = document.getElementById('error-message');
+  const email = typedEmail.value;
+
+  // Check if email value is lowercase or not
+  if (email !== email.toLowerCase()) {
+    e.preventDefault();
+    typedEmail.classList.add('invalid');
+    errorInfo.classList.add('error');
+    errorInfo.innerText = 'Email should be in lower case!!';
+  } else {
+    typedEmail.classList.remove('invalid');
+    errorInfo.classList.remove('error');
+  }
+}
+const form = document.getElementById('form');
+form.addEventListener('submit', onSubmit);
+
+// Remove Error onchange from the form.
+const typedEmail = document.getElementById('email');
+const errorInfo = document.getElementById('error-message');
+typedEmail.addEventListener('change', () => {
+  typedEmail.classList.remove('invalid');
+  errorInfo.classList.remove('error');
+  errorInfo.innerText = '';
+});

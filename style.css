@@ -546,6 +546,9 @@ h6 {
   flex-direction: row;
 }
 
+#error-message {
+  color: red;
+}
 @media only screen and (min-width: 768px) {
   .Template-1 {
     position: absolute;
@@ -856,15 +859,8 @@ h6 {
   padding: 12px;
 }
 
-#error {
-  color: red;
-}
 
-.btns {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-}
+
 
 @media only screen and (min-width: 768px) {
   /* Popup Window */
