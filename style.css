@@ -549,6 +549,7 @@ h6 {
 #error-message {
   color: red;
 }
+
 @media only screen and (min-width: 768px) {
   .Template-1 {
     position: absolute;
@@ -858,9 +859,6 @@ h6 {
   color: #396df2;
   padding: 12px;
 }
-
-
-
 
 @media only screen and (min-width: 768px) {
   /* Popup Window */
