@@ -279,9 +279,6 @@ function popAllProject() {
   });
 }
 
-window.onload = () => {
-  popAllProject();
-};
 
 /* Validate form */
 // selecting input elements
@@ -319,6 +316,7 @@ formComment.addEventListener('change', onChange);
 
 // Load Data in dom on the fly
 window.onload = () => {
+  popAllProject();
   loadLocalStorage();
 };
 
