@@ -302,5 +302,3 @@ function onSubmit(event) {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', onSubmit);
-
-// Here is where you can remove the comments
