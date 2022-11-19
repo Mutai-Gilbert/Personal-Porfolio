@@ -780,11 +780,6 @@ h6 {
   flex-direction: column;
 }
 
-.article-block {
-  display: flex;
-  flex-direction: column;
-}
-
 .left-block {
   height: 280px;
 }
@@ -862,6 +857,10 @@ h6 {
   padding: 12px;
 }
 
+#error {
+  color: red;
+}
+
 @media only screen and (min-width: 768px) {
   /* Popup Window */
 
@@ -898,11 +897,6 @@ h6 {
 
   .img {
     border-radius: 8px;
-  }
-
-  .article-block {
-    display: flex;
-    flex-direction: column;
   }
 
   .project-block {
