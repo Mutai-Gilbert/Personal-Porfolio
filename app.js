@@ -197,10 +197,9 @@ function popProject(id) {
     closePopup.addEventListener('click', () => {
       document.querySelector('main').removeChild(section);
     });
-    console.log("Message");
   }
 }
-console.log("Message");
+
 // Implementing existing project
 function popAllProject() {
   // first portfolio
@@ -261,7 +260,6 @@ function popAllProject() {
       tag.classList.add('tag-skill');
       tag.innerText = skill;
       tags.appendChild(tag);
-      console.log("Message");
     });
     workBlock.appendChild(tags);
 
@@ -304,9 +302,7 @@ form.addEventListener('submit', (e) => {
     errorMessage.classList.remove('error');
     form.submit();
   }
-  console.log("Message");
 });
-console.log("Message");
 // Preserve Storage Section
 const formName = document.getElementById('name');
 const formComment = document.getElementById('textarea');
