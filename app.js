@@ -279,7 +279,6 @@ function popAllProject() {
   });
 }
 
-
 /* Validate form */
 // selecting input elements
 const formName = document.getElementById('name');
