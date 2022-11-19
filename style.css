@@ -861,6 +861,12 @@ h6 {
   color: red;
 }
 
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
 @media only screen and (min-width: 768px) {
   /* Popup Window */
 

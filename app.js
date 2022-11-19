@@ -285,20 +285,52 @@ window.onload = () => {
 
 /* Validate form */
 function onSubmit(event) {
-  const validate = document.getElementById('email');
+  function saveToLocalStorage(n, c, e) {
+    const data = { name: n, comment: c, email: e };
+    const storeData = JSON.stringify(data);
+    localStorage.setItem('data', storeData);
+  }
+
+  const formEmail = document.getElementById('email');
+  const formName = document.getElementById('name');
+  const formComment = document.getElementById('textarea');
   const errorMessage = document.getElementById('error');
-  const email = validate.value;
+  const name = formName.value;
+  const comment = formComment.value;
+  const email = formEmail.value;
 
   if (email.toLowerCase() !== email) {
     event.preventDefault();
-    validate.classList.add('invalid');
+    formEmail.classList.add('invalid');
     errorMessage.classList.add('error');
     errorMessage.innerText = 'Email should be lowercase!';
   } else {
-    validate.classList.remove('invalid');
+    formEmail.classList.remove('invalid');
     errorMessage.classList.remove('error');
+    saveToLocalStorage(name, comment, email);
   }
+
+  // Load data
+  const loadData = JSON.parse(localStorage.getItem('storeData'));
+  if (loadData !== null) {
+    formName.value = loadData.name;
+    formComment.value = loadData.comment;
+    formEmail.value = loadData.email;
+  }
+
+  // Reset form after sending the values
+  const reset = () => {
+    formName.value = '';
+    formComment.value = '';
+    formEmail.value = '';
+    localStorage.clear();
+  };
+
+  const buttonReset = document.getElementById('reset');
+  buttonReset.addEventListener('click', reset);
 }
 
 const form = document.getElementById('form');
 form.addEventListener('submit', onSubmit);
+
+// Local storage
