@@ -197,9 +197,10 @@ function popProject(id) {
     closePopup.addEventListener('click', () => {
       document.querySelector('main').removeChild(section);
     });
+    console.log("Message");
   }
 }
-
+console.log("Message");
 // Implementing existing project
 function popAllProject() {
   // first portfolio
@@ -260,6 +261,7 @@ function popAllProject() {
       tag.classList.add('tag-skill');
       tag.innerText = skill;
       tags.appendChild(tag);
+      console.log("Message");
     });
     workBlock.appendChild(tags);
 
@@ -284,53 +286,44 @@ window.onload = () => {
 };
 
 /* Validate form */
-function onSubmit(event) {
-  function saveToLocalStorage(n, c, e) {
-    const data = { name: n, comment: c, email: e };
-    const storeData = JSON.stringify(data);
-    localStorage.setItem('data', storeData);
-  }
 
-  const formEmail = document.getElementById('email');
-  const formName = document.getElementById('name');
-  const formComment = document.getElementById('textarea');
-  const errorMessage = document.getElementById('error');
-  const name = formName.value;
-  const comment = formComment.value;
-  const email = formEmail.value;
+// Form Validation Section
 
+const form = document.getElementById('form');
+const formEmail = document.getElementById('email');
+const errorMessage = document.getElementById('error');
+const email = formEmail.value;
+form.addEventListener('submit', (e) => {
   if (email.toLowerCase() !== email) {
-    event.preventDefault();
+    e.preventDefault();
     formEmail.classList.add('invalid');
     errorMessage.classList.add('error');
     errorMessage.innerText = 'Email should be lowercase!';
   } else {
     formEmail.classList.remove('invalid');
     errorMessage.classList.remove('error');
-    saveToLocalStorage(name, comment, email);
+    form.submit();
   }
+  console.log("Message");
+});
+console.log("Message");
+// Preserve Storage Section
+const formName = document.getElementById('name');
+const formComment = document.getElementById('textarea');
 
-  // Load data
-  const loadData = JSON.parse(localStorage.getItem('storeData'));
-  if (loadData !== null) {
-    formName.value = loadData.name;
-    formComment.value = loadData.comment;
-    formEmail.value = loadData.email;
-  }
-
-  // Reset form after sending the values
-  const reset = () => {
-    formName.value = '';
-    formComment.value = '';
-    formEmail.value = '';
-    localStorage.clear();
+form.addEventListener('submit', () => {
+  const Data = {
+    Name: formName.value,
+    Email: formEmail.value,
+    Text: formComment.value,
   };
+  localStorage.setItem('data', JSON.stringify(Data));
+});
 
-  const buttonReset = document.getElementById('reset');
-  buttonReset.addEventListener('click', reset);
+const AutoFiller = localStorage.getItem('data');
+if (AutoFiller) {
+  const DataStored = JSON.parse(localStorage.getItem('data'));
+  formName.value = DataStored.Name;
+  formEmail.value = DataStored.Email;
+  formComment.value = DataStored.Text;
 }
-
-const form = document.getElementById('form');
-form.addEventListener('submit', onSubmit);
-
-// Local storage
