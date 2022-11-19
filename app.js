@@ -197,9 +197,10 @@ function popProject(id) {
     closePopup.addEventListener('click', () => {
       document.querySelector('main').removeChild(section);
     });
+    console.log("Message");
   }
 }
-
+console.log("Message");
 // Implementing existing project
 function popAllProject() {
   // first portfolio
@@ -260,6 +261,7 @@ function popAllProject() {
       tag.classList.add('tag-skill');
       tag.innerText = skill;
       tags.appendChild(tag);
+      console.log("Message");
     });
     workBlock.appendChild(tags);
 
@@ -284,21 +286,44 @@ window.onload = () => {
 };
 
 /* Validate form */
-function onSubmit(event) {
-  const validate = document.getElementById('email');
-  const errorMessage = document.getElementById('error');
-  const email = validate.value;
 
+// Form Validation Section
+
+const form = document.getElementById('form');
+const formEmail = document.getElementById('email');
+const errorMessage = document.getElementById('error');
+const email = formEmail.value;
+form.addEventListener('submit', (e) => {
   if (email.toLowerCase() !== email) {
-    event.preventDefault();
-    validate.classList.add('invalid');
+    e.preventDefault();
+    formEmail.classList.add('invalid');
     errorMessage.classList.add('error');
     errorMessage.innerText = 'Email should be lowercase!';
   } else {
-    validate.classList.remove('invalid');
+    formEmail.classList.remove('invalid');
     errorMessage.classList.remove('error');
+    form.submit();
   }
-}
+  console.log("Message");
+});
+console.log("Message");
+// Preserve Storage Section
+const formName = document.getElementById('name');
+const formComment = document.getElementById('textarea');
 
-const form = document.getElementById('form');
-form.addEventListener('submit', onSubmit);
+form.addEventListener('submit', () => {
+  const Data = {
+    Name: formName.value,
+    Email: formEmail.value,
+    Text: formComment.value,
+  };
+  localStorage.setItem('data', JSON.stringify(Data));
+});
+
+const AutoFiller = localStorage.getItem('data');
+if (AutoFiller) {
+  const DataStored = JSON.parse(localStorage.getItem('data'));
+  formName.value = DataStored.Name;
+  formEmail.value = DataStored.Email;
+  formComment.value = DataStored.Text;
+}
