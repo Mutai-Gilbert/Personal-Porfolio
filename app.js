@@ -295,7 +295,7 @@ function loadLocalStorage() {
   if (formData) {
     formName.value = formData.name;
     formEmail.value = formData.email;
-    formComment.value = formData.message;
+    formComment.value = formData.textarea;
   }
 }
 
