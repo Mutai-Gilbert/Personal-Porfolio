@@ -211,7 +211,7 @@
 
 
     <div class="forms">
-      <form class="form-action" action="https://formspree.io/f/xrgdqvko" method="post">
+      <form id="form" class="form-action" action="https://formspree.io/f/xrgdqvko" method="post">
         <ul class="form">
           <li>
             <input type="text" name="name" id="name" placeholder="Yeremias" maxlength="30" required />
@@ -224,8 +224,9 @@
               maxlength="500" required></textarea>
           </li>
           <li>
-            <button class="action-button type="submit">Get in Touch</button>
+            <button class="action-button" type="submit">Get in Touch</button>
           </li>
+          <label id="error" for=""></label>
         </ul>
       </form>
 

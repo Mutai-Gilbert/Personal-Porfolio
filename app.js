@@ -282,3 +282,23 @@ function popAllProject() {
 window.onload = () => {
   popAllProject();
 };
+
+/* Validate form */
+function onSubmit(event) {
+  const validate = document.getElementById('email');
+  const errorMessage = document.getElementById('error');
+  const email = validate.value;
+
+  if (email.toLowerCase() !== email) {
+    event.preventDefault();
+    validate.classList.add('invalid');
+    errorMessage.classList.add('error');
+    errorMessage.innerText = 'Email should be lowercase!';
+  } else {
+    validate.classList.remove('invalid');
+    errorMessage.classList.remove('error');
+  }
+}
+
+const form = document.getElementById('form');
+form.addEventListener('submit', onSubmit);
