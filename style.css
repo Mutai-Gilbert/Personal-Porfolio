@@ -64,7 +64,6 @@ body {
 }
 
 .Template-1 {
-  /* position: absolute; */
   width: 100%;
   overflow-x: hidden;
 }
@@ -547,6 +546,10 @@ h6 {
   flex-direction: row;
 }
 
+#error-message {
+  color: red;
+}
+
 @media only screen and (min-width: 768px) {
   .Template-1 {
     position: absolute;
@@ -780,11 +783,6 @@ h6 {
   flex-direction: column;
 }
 
-.article-block {
-  display: flex;
-  flex-direction: column;
-}
-
 .left-block {
   height: 280px;
 }
@@ -898,11 +896,6 @@ h6 {
 
   .img {
     border-radius: 8px;
-  }
-
-  .article-block {
-    display: flex;
-    flex-direction: column;
   }
 
   .project-block {
